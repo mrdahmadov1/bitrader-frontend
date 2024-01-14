@@ -1,5 +1,11 @@
+import Home from "./pages/main/home";
+
 function App() {
-  return <>App</>;
+  return (
+    <>
+      <Home />
+    </>
+  );
 }
 
 export default App;
