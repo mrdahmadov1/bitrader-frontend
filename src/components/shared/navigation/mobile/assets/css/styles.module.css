@@ -1,0 +1,79 @@
+.navList {
+  background-color: var(--wh-color);
+  box-shadow: 0 5px 10px -3px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  text-align: left;
+  z-index: 999;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: all 0.3s ease;
+}
+
+.navList.active {
+  transform: scaleY(1);
+}
+
+.navList .navItem,
+.subNavList .subNavItem {
+  padding: 10px 25px;
+  border-top: 1px solid var(--border-color-8);
+  text-transform: capitalize;
+  font-family: 'Open Sans';
+  font-weight: 500;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.subNavList .subNavItem {
+  padding: 8px 20px;
+  font-size: 13px;
+}
+
+.subNavList .subNavItem:hover {
+  border-top-width: 2px;
+}
+
+.navList .navItem:hover {
+  border-top-width: 3px;
+}
+
+.navList .navItem a,
+.navList .navItem span {
+  color: var(--title-color);
+}
+
+.navItem span i {
+  transition: transform 0.3s ease;
+}
+
+.navItem span i.active {
+  transform: rotate(-180deg);
+}
+
+.subNavList {
+  height: 0;
+  opacity: 0;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: all 0.3s ease;
+}
+
+.subNavList.active {
+  margin-top: 8px;
+  height: 100px;
+  opacity: 1;
+  transform: scaleY(1);
+}
+
+.btnToggle {
+  background-color: transparent;
+  border: none;
+}
+
+.btnToggle i {
+  font-size: 24px;
+  line-height: 1;
+}
