@@ -1,0 +1,76 @@
+.navList {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navItem {
+  padding: 10px 16px;
+  color: var(--title-color);
+  font-size: 1rem;
+  font-family: 'Open Sans';
+  font-weight: 500;
+  text-transform: capitalize;
+  position: relative;
+}
+
+.navItem:hover {
+  color: rgba(var(--title-color), 0.5);
+}
+
+.navItem span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  cursor: pointer;
+
+}
+
+.navItem span i {
+  margin-top: 2px;
+  font-size: 12px;
+}
+
+.navItem:hover span i {
+  transform: rotate(-180deg);
+}
+
+.navItem:hover .subNavList {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0px);
+  transition: all 0.3s ease-out;
+}
+
+.subNavList {
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 9;
+  background-color: var(--wh-color);
+  width: 220px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.18);
+  border-radius: 0.4rem;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.3s ease-out;
+}
+
+.subNavItem a {
+  text-align: left;
+  padding: 10px 20px;
+  font-weight: 400;
+  color: var(--title-color);
+  border-bottom: 1px solid rgba(var(--wh-color), 0.05);
+  border-radius: 0.3rem;
+  transition: all 0.3s ease-out;
+}
+
+.subNavItem a:hover {
+  background-color: var(--wh-color);
+  padding-left: 22px;
+  color: var(--brand-color);
+}

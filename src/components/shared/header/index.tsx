@@ -21,7 +21,7 @@ const Header = () => {
                 <Link to="register">join now</Link>
               </button>
             </div>
-            <div className="col col-2 col-md-1 col-lg-7 text-end text-lg-center">
+            <div className="col col-2 col-md-1 col-lg-6 col-xl-5  text-end text-lg-center">
               <Navigation />
             </div>
           </div>

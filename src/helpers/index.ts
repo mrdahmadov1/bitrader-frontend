@@ -1,8 +1,9 @@
 import { Dispatch, SetStateAction } from "react";
 
+// Boolean State Changes
 export const handleToggler = (
-  isOpen: boolean,
-  setIsOpen: Dispatch<SetStateAction<boolean>>
+  isState: boolean,
+  setIsState: Dispatch<SetStateAction<boolean>>
 ) => {
-  setIsOpen(!isOpen);
+  setIsState(!isState);
 };
