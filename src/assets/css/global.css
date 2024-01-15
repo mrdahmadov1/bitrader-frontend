@@ -1,8 +1,9 @@
 /** Font Family*/
 /* Open Sans */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap');
 
 :root {
+  --bg-white: #FFFFFF;
   --body-color: #FFFFFF;
   --text-color: #6B777F;
   --title-color: #0C263A;
