@@ -10,6 +10,7 @@
   font-size: 1rem;
   font-family: 'Open Sans';
   font-weight: 500;
+  line-height: 1;
   text-transform: capitalize;
   position: relative;
 }
@@ -24,15 +25,14 @@
   justify-content: center;
   gap: 4px;
   cursor: pointer;
-
 }
 
 .navItem span i {
-  margin-top: 2px;
-  font-size: 12px;
+  font-size: 10px;
 }
 
 .navItem:hover span i {
+  transition: all 0.3s ease;
   transform: rotate(-180deg);
 }
 
@@ -51,6 +51,7 @@
   z-index: 9;
   background-color: var(--wh-color);
   width: 220px;
+  margin-top: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.18);
   border-radius: 0.4rem;
   visibility: hidden;

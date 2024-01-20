@@ -1,6 +1,8 @@
 /** Font Family*/
 /* Open Sans */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+/* Anek Telugu */
+@import url('https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@300;400;500;600;700&display=swap');
 
 :root {
   --bg-white: #FFFFFF;
@@ -23,4 +25,30 @@
   --box-shadow: 0px 12px 30px rgba(33, 85, 186, 0.08);
   --bg-grad-color: #FFF;
   --bg-grad-color-trans: rgba(255, 255, 255, 0)
+}
+
+body {
+  background-color: var(--body-color);
+  color: var(--text-color);
+  font-size: 1rem;
+  line-height: 1.625;
+  font-family: "Open Sans", sans-serif;
+  cursor: default;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Anek Telugu';
+  font-weight: 600;
+  color: var(--title-color);
+  margin-bottom: 0.5rem;
+}
+
+h1 {
+  font-size: calc(1.5rem + 2.57vw);
+  line-height: 1;
 }

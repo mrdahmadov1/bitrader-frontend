@@ -62,7 +62,7 @@
 }
 
 .subNavList.active {
-  margin-top: 8px;
+  margin-top: 22px;
   height: 100px;
   opacity: 1;
   transform: scaleY(1);
@@ -76,4 +76,10 @@
 .btnToggle i {
   font-size: 24px;
   line-height: 1;
+}
+
+@media all and (min-width:576px) {
+  .btnToggle i {
+    font-size: 32px;
+  }
 }

@@ -2,11 +2,10 @@ a {
   display: block;
   text-decoration: none;
   color: inherit;
+  line-height: 1;
+  cursor: pointer;
 }
 
-span {
-  display: block;
-}
 
 ul {
   list-style: none;
@@ -14,7 +13,21 @@ ul {
   padding: 0;
 }
 
-p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+pre {
   margin: 0;
+  padding: 0;
+}
+
+button {
+  background: none;
+  outline: none;
+  border: none;
   padding: 0;
 }
