@@ -25,6 +25,14 @@
   }
 }
 
+
+/* Wrapper Styles */
+.wrapper {
+  background: url('../images//bg.png');
+  background-size: cover;
+  background-position: center;
+}
+
 /* Container Styles */
 .container {
   padding-top: 6rem;
@@ -196,6 +204,9 @@
 }
 
 @media all and (min-width:768px) {
+
+
+
   .container {
     flex-direction: row;
   }
@@ -235,11 +246,7 @@
 }
 
 @media all and (min-width:992px) {
-  .wrapper {
-    background: url('../images//bg.png');
-    background-size: cover;
-    background-position: center;
-  }
+
 
   .imgCoin img {
     width: 110px;
