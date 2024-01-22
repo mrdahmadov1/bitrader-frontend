@@ -1,16 +1,26 @@
 import { Link } from "react-router-dom";
+import bgLight from "./assets/images/bg.png";
+import bgDark from "./assets/images/bg-dark.png";
 import coinImg from "./assets/images/coin.png";
 import heroImg from "./assets/images/hero.png";
 import { socialMediaLinks } from "../../../../constants/main/home/intro";
 import styles from "./assets/css/styles.module.css";
 import { useTranslation } from "react-i18next";
+import { useSelector } from "react-redux";
+import { RootState } from "../../../../store/configureStore";
 
 const Intro = () => {
   const { t } = useTranslation();
+  const currentTheme = useSelector(
+    (state: RootState) => state.theme.currentTheme
+  );
 
   return (
     <>
-      <section className={`wrapper ${styles.wrapper}`}>
+      <section className="wrapper">
+        <div className={`d-none d-lg-block ${styles.bg}`}>
+          <img src={currentTheme === "light" ? bgLight : bgDark} alt="" />
+        </div>
         <div className="container">
           <div className={styles.container}>
             <div className={`col col-12 col-md-7 col-lg-6 ${styles.content}`}>

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import { handleToggler } from "../../../../helpers";
+import { handleToggler } from "../../../../helpers/handleToggler";
 import styles from "./assets/css/styles.module.css";
 import { INavItem } from "../../../../models/INavItem";
 import { mainNavItems } from "../../../../constants/shared/navigation";

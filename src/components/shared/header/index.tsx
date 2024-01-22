@@ -1,11 +1,17 @@
 import { Link } from "react-router-dom";
 import logoDark from "../../../assets/images/logo-dark.png";
+import logoLight from "../../../assets/images/logo-light.png";
 import styles from "./assets/css/styles.module.css";
 import Navigation from "../navigation";
 import { useTranslation } from "react-i18next";
+import { useSelector } from "react-redux";
+import { RootState } from "../../../store/configureStore";
 
 const Header = () => {
   const { t } = useTranslation();
+  const currentTheme = useSelector(
+    (state: RootState) => state.theme.currentTheme
+  );
 
   return (
     <>
@@ -15,7 +21,10 @@ const Header = () => {
             <div className="col col-5 col-lg-3 text-start">
               <div className={styles.logo}>
                 <Link to="">
-                  <img src={logoDark} alt="logo-dark" />
+                  <img
+                    src={currentTheme === "light" ? logoDark : logoLight}
+                    alt="logo-dark"
+                  />
                 </Link>
               </div>
             </div>

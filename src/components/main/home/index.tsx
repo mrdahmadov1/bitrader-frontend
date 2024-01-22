@@ -1,5 +1,6 @@
 import Header from "../../shared/header";
 import LanguageSwitcher from "../../shared/languageSwitcher";
+import ThemeSwitcher from "../../shared/themeSwitcher";
 import Intro from "./intro";
 
 const HomeContainer = () => {
@@ -8,6 +9,7 @@ const HomeContainer = () => {
       <Header />
       <Intro />
       <LanguageSwitcher />
+      <ThemeSwitcher />
     </>
   );
 };

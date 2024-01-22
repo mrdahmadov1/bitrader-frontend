@@ -25,12 +25,14 @@
   }
 }
 
-
-/* Wrapper Styles */
-.wrapper {
-  background: url('../images//bg.png');
-  background-size: cover;
-  background-position: center;
+/* Background Styles */
+.bg img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+  opacity: 0.8;
 }
 
 /* Container Styles */
@@ -99,6 +101,7 @@
   padding: 0.75rem 1rem;
   border: 1px solid var(--brand-color);
   overflow: hidden;
+  position: relative;
 }
 
 .btnStart:hover {
@@ -116,6 +119,7 @@
   transform: rotate(35deg);
   transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
   width: 50px;
+  z-index: -9999;
 }
 
 .btnStart:hover::after {
@@ -246,6 +250,7 @@
 }
 
 @media all and (min-width:992px) {
+
 
 
   .imgCoin img {
