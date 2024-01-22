@@ -2,8 +2,11 @@ import { Link } from "react-router-dom";
 import logoDark from "../../../assets/images/logo-dark.png";
 import styles from "./assets/css/styles.module.css";
 import Navigation from "../navigation";
+import { useTranslation } from "react-i18next";
 
 const Header = () => {
+  const { t } = useTranslation();
+
   return (
     <>
       <div className={`wrapper ${styles.wrapper}`}>
@@ -16,9 +19,9 @@ const Header = () => {
                 </Link>
               </div>
             </div>
-            <div className="col col-lg-2 d-none d-md-block text-end order-lg-3 ">
+            <div className="col col-lg-3 d-none d-md-block text-end order-lg-3 ">
               <button className={styles.btnJoin}>
-                <Link to="register">join now</Link>
+                <Link to="register">{t("shared.header.btnJoin")}</Link>
               </button>
             </div>
             <div className="col col-2 col-md-1 col-lg-6 col-xl-5  text-end text-lg-center">

@@ -1,0 +1,29 @@
+{
+  "shared": {
+    "header": {
+      "btnJoin": "join now",
+      "navList": {
+        "home": "home",
+        "about": "about",
+        "blogs": "blogs",
+        "services": "services",
+        "contact": "contact"
+      },
+      "subNavList": {
+        "aboutUs": "about us",
+        "team": "team",
+        "price": "price"
+      }
+    }
+  },
+  "home": {
+    "intro": {
+      "title": "invest your money with",
+      "titleSpan": "higher return",
+      "description": "Anyone can invest money to different currency to increase their earnings by the help of Bitrader through online.",
+      "btnStart": "get started",
+      "btnWatch": "watch video",
+      "socialTitle": "follow us"
+    }
+  }
+}

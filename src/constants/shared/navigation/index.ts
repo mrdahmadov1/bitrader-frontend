@@ -1,14 +1,14 @@
 export const mainNavItems = [
-  { label: "Home", to: "home" },
+  { label: "home", to: "home" },
   {
-    label: "About",
+    label: "about",
     subItems: [
-      { label: "About Us", to: "about" },
-      { label: "Team", to: "about/team" },
-      { label: "Price", to: "about/price" },
+      { label: "aboutUs", to: "about" },
+      { label: "team", to: "about/team" },
+      { label: "price", to: "about/price" },
     ],
   },
-  { label: "Blogs", to: "blogs" },
-  { label: "Services", to: "services" },
-  { label: "Contact", to: "contact" },
+  { label: "blogs", to: "blogs" },
+  { label: "services", to: "services" },
+  { label: "contact", to: "contact" },
 ];

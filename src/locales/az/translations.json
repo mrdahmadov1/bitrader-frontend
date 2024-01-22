@@ -1,0 +1,29 @@
+{
+  "shared": {
+    "header": {
+      "btnJoin": "İndi qoşul",
+      "navList": {
+        "home": "əsas",
+        "about": "haqqımızda",
+        "blogs": "bloq",
+        "services": "xidmətlərimiz",
+        "contact": "əlaqə"
+      },
+      "subNavList": {
+        "aboutUs": "haqqımızda",
+        "team": "komandamız",
+        "price": "qiymət"
+      }
+    }
+  },
+  "home": {
+    "intro": {
+      "title": "pulunuzu  yatırın,",
+      "titleSpan": "daha yüksək gəlirlə",
+      "description": "Hər kəs Bitrader-in köməyi ilə qazancını onlayn olaraq artırmaq üçün müxtəlif valyutalara pul yatıra bilər.",
+      "btnStart": "İndi başla",
+      "btnWatch": "videonu İzlə",
+      "socialTitle": "bizi İzlə"
+    }
+  }
+}

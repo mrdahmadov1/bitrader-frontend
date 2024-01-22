@@ -3,11 +3,14 @@ import coinImg from "./assets/images/coin.png";
 import heroImg from "./assets/images/hero.png";
 import { socialMediaLinks } from "../../../../constants/main/home/intro";
 import styles from "./assets/css/styles.module.css";
+import { useTranslation } from "react-i18next";
 
 const Intro = () => {
+  const { t } = useTranslation();
+
   return (
     <>
-      <div className={`wrapper ${styles.wrapper}`}>
+      <section className={`wrapper ${styles.wrapper}`}>
         <div className="container">
           <div className={styles.container}>
             <div className={`col col-12 col-md-7 col-lg-6 ${styles.content}`}>
@@ -15,24 +18,23 @@ const Intro = () => {
                 <img src={coinImg} alt="coin image" />
               </div>
               <h1 className={styles.title}>
-                invest your money with <span>higher return</span>
+                {t("home.intro.title")} <span>{t("home.intro.titleSpan")}</span>
               </h1>
               <p className={styles.description}>
-                Anyone can invest money to different currency to increase their
-                earnings by the help of Bitrader through online.
+                {t("home.intro.description")}
               </p>
               <div className={styles.btnGroup}>
                 <Link to="login" className={styles.btnStart}>
-                  get started
+                  {t("home.intro.btnStart")}
                   <i className="bi bi-arrow-right"></i>
                 </Link>
                 <Link to="https://youtube.com" className={styles.btnWatch}>
                   <i className="bi bi-play-circle"></i>
-                  watch video
+                  {t("home.intro.btnWatch")}
                 </Link>
               </div>
               <div className={styles.social}>
-                <p>follow us</p>
+                <p>{t("home.intro.socialTitle")}</p>
                 <ul className={styles.socialLinkList}>
                   {socialMediaLinks.map((link, index) => (
                     <li key={index} className={styles.socialLinkItem}>
@@ -49,7 +51,7 @@ const Intro = () => {
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 };

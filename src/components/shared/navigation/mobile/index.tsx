@@ -4,8 +4,10 @@ import { handleToggler } from "../../../../helpers";
 import styles from "./assets/css/styles.module.css";
 import { INavItem } from "../../../../models/INavItem";
 import { mainNavItems } from "../../../../constants/shared/navigation";
+import { useTranslation } from "react-i18next";
 
 const MobileNavigation = () => {
+  const { t } = useTranslation();
   const [isOpenMenu, setIsOpenMenu] = useState<boolean>(false);
   const [isOpenSubMenu, setIsOpenSubMenu] = useState<boolean>(false);
 
@@ -16,7 +18,9 @@ const MobileNavigation = () => {
       >
         {subItems.map((item, index) => (
           <li className={styles.subNavItem} key={index}>
-            <NavLink to={item.to}>{item.label}</NavLink>
+            <NavLink to={item.to}>
+              {t(`shared.header.subNavList.${item.label}`)}
+            </NavLink>
           </li>
         ))}
       </ul>
@@ -41,7 +45,7 @@ const MobileNavigation = () => {
                   className={`d-flex justify-content-between align-items-center`}
                   onClick={() => handleToggler(isOpenSubMenu, setIsOpenSubMenu)}
                 >
-                  <p>{item.label}</p>
+                  <p>{t(`shared.header.navList.${item.label}`)}</p>
                   <i
                     className={`bi bi-chevron-down ${
                       isOpenSubMenu ? styles.active : null
@@ -49,7 +53,9 @@ const MobileNavigation = () => {
                   ></i>
                 </span>
               ) : (
-                <NavLink to={item.to}>{item.label}</NavLink>
+                <NavLink to={item.to}>
+                  {t(`shared.header.navList.${item.label}`)}
+                </NavLink>
               )}
 
               {item.subItems && renderSubNav(item.subItems)}
