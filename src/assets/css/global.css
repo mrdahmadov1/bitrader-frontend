@@ -36,6 +36,31 @@ body {
   cursor: default;
 }
 
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--brand-color);
+}
+
+::-webkit-scrollbar-track {
+  background: var(--text-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--brand-color);
+}
+
+::-webkit-scrollbar-track-horizontal {
+  background: var(--text-color);
+}
+
+::-webkit-scrollbar-thumb-horizontal {
+  background: var(--brand-color);
+}
+
+
 h1,
 h2,
 h3,
