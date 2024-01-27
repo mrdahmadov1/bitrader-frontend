@@ -11,6 +11,7 @@
   border-radius: 8px;
   overflow: hidden;
   cursor: pointer;
+  z-index: 999;
 }
 
 .theme {

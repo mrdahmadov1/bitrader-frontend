@@ -1,0 +1,30 @@
+.wrapper {
+  width: 100%;
+  background-color: var(--tertiary-color);
+  padding: 18px 0;
+  border-top: 6px solid var(--body-color);
+  border-bottom: 6px solid var(--body-color);
+  margin: 80px 0;
+  position: relative;
+}
+
+.wrapper::after {
+  position: absolute;
+  content: "";
+  width: calc(100vw - 20px);
+  left: 8px;
+  top: -18px;
+  height: 120px;
+  background: linear-gradient(150.39deg, rgb(237, 242, 248) 15.02%, #EDF2F8 99.59%);
+  transform: rotate(2deg);
+  z-index: -999;
+  opacity: 0.5;
+}
+
+.container {}
+
+.slideImg {
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
