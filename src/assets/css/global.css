@@ -77,3 +77,8 @@ h1 {
   font-size: calc(1.5rem + 2.57vw);
   line-height: 1;
 }
+
+h2 {
+  font-size: calc(1.425rem + 1.8vw);
+  line-height: 56px;
+}

@@ -78,6 +78,10 @@
   line-height: 1;
 }
 
+.btnToggle i::before {
+  color: var(--title-color);
+}
+
 @media all and (min-width:576px) {
   .btnToggle i {
     font-size: 32px;

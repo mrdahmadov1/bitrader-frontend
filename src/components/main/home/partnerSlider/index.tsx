@@ -4,20 +4,28 @@ import "swiper/css";
 import styles from "./assets/css/styles.module.css";
 
 import slide1 from "./assets/images/slide-1.png";
+import slide1Dark from "./assets/images/slide-1-dark.png";
 import slide2 from "./assets/images/slide-2.png";
+import slide2Dark from "./assets/images/slide-2-dark.png";
 import slide3 from "./assets/images/slide-3.png";
 import slide4 from "./assets/images/slide-4.png";
 import slide5 from "./assets/images/slide-5.png";
+import slide5Dark from "./assets/images/slide-5-dark.png";
+import { RootState, useAppSelector } from "../../../../store/configureStore";
 
 const slides = [
-  { id: 1, image: slide1 },
-  { id: 2, image: slide2 },
-  { id: 3, image: slide3 },
-  { id: 4, image: slide4 },
-  { id: 5, image: slide5 },
+  { id: 1, lightImage: slide1, darkImage: slide1Dark },
+  { id: 2, lightImage: slide2, darkImage: slide2Dark },
+  { id: 3, lightImage: slide3, darkImage: slide3 },
+  { id: 4, lightImage: slide4, darkImage: slide4 },
+  { id: 5, lightImage: slide5, darkImage: slide5Dark },
 ];
 
-export default function App() {
+export default function PartnerSlider() {
+  const currentTheme = useAppSelector(
+    (state: RootState) => state.theme.currentTheme
+  );
+
   return (
     <div className={`wrapper ${styles.wrapper}`}>
       <div className={`container ${styles.container}`}>
@@ -25,7 +33,7 @@ export default function App() {
           slidesPerView={1}
           loop={true}
           autoplay={{
-            delay: 2500,
+            delay: 2000,
             disableOnInteraction: false,
           }}
           breakpoints={{
@@ -42,7 +50,14 @@ export default function App() {
           {slides.map((slide) => (
             <SwiperSlide key={slide.id}>
               <div className={styles.slideImg}>
-                <img src={slide.image} alt={`slide ${slide.id}`} />
+                <img
+                  src={
+                    currentTheme === "light"
+                      ? slide.lightImage
+                      : slide.darkImage
+                  }
+                  alt={`slide ${slide.id}`}
+                />
               </div>
             </SwiperSlide>
           ))}
