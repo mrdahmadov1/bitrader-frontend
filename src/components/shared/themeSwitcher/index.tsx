@@ -13,7 +13,10 @@ const ThemeSwitcher = () => {
 
   return (
     <>
-      <div onClick={() => dispatch(toggleTheme())} className={styles.container}>
+      <div
+        onClick={() => dispatch(toggleTheme())}
+        className={styles.themeSwitcherContainer}
+      >
         <div className={styles.theme}>
           <img
             src={currentTheme === "light" ? sunIcon : moonIcon}

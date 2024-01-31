@@ -1,4 +1,4 @@
-.container {
+.languageSwitcherContainer {
   position: fixed;
   width: 40px;
   height: 40px;
@@ -14,6 +14,11 @@
   transition: all 0.3s ease;
 }
 
+.languageSwitcherContainer:hover {
+  transform: scale(0.8);
+}
+
+
 .flag {
   width: 100%;
 }
@@ -25,13 +30,13 @@
 }
 
 @media all and (min-width:576px) {
-  .container {
+  .languageSwitcherContainer {
     bottom: calc(7% + 52px);
   }
 }
 
 @media all and (min-width:992px) {
-  .container {
+  .languageSwitcherContainer {
     left: auto;
     right: calc(5% + 52px);
     top: 120px;

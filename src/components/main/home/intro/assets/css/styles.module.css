@@ -36,7 +36,7 @@
   z-index: -9999;
 }
 
-.wrapper {
+.intro {
   /* background-color: var(--bg-color); */
 }
 
@@ -204,6 +204,7 @@
 
 .hero img {
   width: 100%;
+  animation: floating 2s cubic-bezier(0.41, 0.15, 0.64, 0.86) infinite alternate;
 }
 
 /* Responsive Styles */
@@ -263,12 +264,11 @@
     position: absolute;
     top: 195px;
     right: -30px;
-    animation: floating 3s cubic-bezier(0.41, 0.15, 0.64, 0.86) infinite alternate;
   }
 }
 
 @media all and (min-width:992px) {
-  .wrapper {
+  .intro {
     background-color: transparent;
   }
 
@@ -296,7 +296,7 @@
     width: 550px;
     top: 160px;
     right: 15px;
-    animation: left-right 3s cubic-bezier(0.41, 0.15, 0.64, 0.86) infinite alternate;
+    animation: left-right 2s cubic-bezier(0.41, 0.15, 0.64, 0.86) infinite alternate;
   }
 }
 

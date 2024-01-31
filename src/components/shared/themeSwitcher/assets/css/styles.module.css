@@ -1,4 +1,4 @@
-.container {
+.themeSwitcherContainer {
   width: 40px;
   height: 40px;
   position: fixed;
@@ -11,7 +11,11 @@
   border-radius: 8px;
   overflow: hidden;
   cursor: pointer;
-  z-index: 999;
+  z-index: 9999;
+}
+
+.themeSwitcherContainer:hover {
+  transform: scale(0.8);
 }
 
 .theme {
@@ -27,13 +31,13 @@
 }
 
 @media all and (min-width:576px) {
-  .container {
+  .themeSwitcherContainer {
     bottom: 7%;
   }
 }
 
 @media all and (min-width:992px) {
-  .container {
+  .themeSwitcherContainer {
     left: auto;
     right: 5%;
     top: 120px;

@@ -8,12 +8,14 @@ import PartnerSlider from "./partnerSlider";
 const HomeContainer = () => {
   return (
     <>
-      <Header />
-      <Intro />
-      <LanguageSwitcher />
-      <ThemeSwitcher />
-      <PartnerSlider />
-      <AboutSection />
+      <div className="wrapper">
+        <Header />
+        <Intro />
+        <LanguageSwitcher />
+        <ThemeSwitcher />
+        <PartnerSlider />
+        <AboutSection />
+      </div>
     </>
   );
 };

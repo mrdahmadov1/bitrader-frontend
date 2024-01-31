@@ -17,7 +17,7 @@ const Intro = () => {
 
   return (
     <>
-      <section className={`wrapper ${styles.wrapper}`}>
+      <section className={`${styles.intro}`}>
         <div className={`d-none d-lg-block ${styles.bg}`}>
           <img
             src={currentTheme === "light" ? bgLight : bgDark}

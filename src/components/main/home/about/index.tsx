@@ -4,8 +4,11 @@ import { AnimationControls, motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import styles from "./assets/css/styles.module.css";
 import thumbImg from "./assets/images/thumb.png";
+import { useTranslation } from "react-i18next";
 
 const AboutSection = () => {
+  const { t } = useTranslation();
+
   const animateSection = (controls: AnimationControls, inView: boolean) => {
     if (inView) {
       controls.start("visible");
@@ -33,7 +36,7 @@ const AboutSection = () => {
 
   const variants2 = {
     hidden: { opacity: 0, x: 100 },
-    visible: { opacity: 1, x: 0, transition: { duration: 2 } },
+    visible: { opacity: 1, x: 0, transition: { duration: 1 } },
   };
 
   useEffect(() => {
@@ -53,7 +56,7 @@ const AboutSection = () => {
   ]);
 
   return (
-    <section className={`wrapper ${styles.wrapper}`}>
+    <section className={`${styles.about}`}>
       <div className={`container ${styles.container}`}>
         <div className="col col-12 col-lg-6">
           <div className={styles.thumb}>
@@ -65,9 +68,11 @@ const AboutSection = () => {
               className={`${styles.thumbContent} ${styles.thumbTopLeft}`}
             >
               <h3 className={styles.thumbTitle}>
-                <span>10</span> years
+                <span>10</span> {t("home.about.thumbTitleTop")}
               </h3>
-              <p className={styles.thumbDescription}>consulting experience</p>
+              <p className={styles.thumbDescription}>
+                {t("home.about.thumbDescriptionTop")}
+              </p>
             </motion.div>
 
             <motion.div
@@ -88,9 +93,12 @@ const AboutSection = () => {
               className={`${styles.thumbContent} ${styles.thumbBottomRight}`}
             >
               <h3 className={styles.thumbTitle}>
-                <span>25</span>k+
+                <span>25</span>
+                {t("home.about.thumbTitleBottom")}
               </h3>
-              <p className={styles.thumbDescription}>satisfied customers</p>
+              <p className={styles.thumbDescription}>
+                {t("home.about.thumbDescriptionBottom")}
+              </p>
             </motion.div>
           </div>
         </div>
@@ -103,18 +111,14 @@ const AboutSection = () => {
             className={styles.content}
           >
             <h2 className={styles.contentTitle}>
-              meet <span>our company</span> unless miss the opportunity
+              <span>{t("home.about.contentTitleSpan")}</span>
+              {t("home.about.contentTitle")}
             </h2>
             <p className={styles.contentDescription}>
-              Hey there! So glad you stopped by to Meet Our Company. Don't miss
-              out on this opportunity to learn about what we do and the amazing
-              team that makes it all happen! Our company is all about creating
-              innovative solutions and providing top-notch services to our
-              clients. From start to finish, we're dedicated to delivering
-              results that exceed expectations.
+              {t("home.about.contentDescription")}
             </p>
             <Link to="about" className={styles.btnMore}>
-              explore more
+              {t("home.about.btnMore")}
             </Link>
           </motion.div>
         </div>

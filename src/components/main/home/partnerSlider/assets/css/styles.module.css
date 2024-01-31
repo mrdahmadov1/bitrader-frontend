@@ -1,4 +1,4 @@
-.wrapper {
+.partnerSlider {
   background-color: var(--tertiary-color);
   padding: 18px 0;
   border-top: 8px solid var(--body-color);
@@ -6,7 +6,7 @@
   position: relative;
 }
 
-.wrapper::after {
+.partnerSlider::after {
   position: absolute;
   content: "";
   width: calc(100vw - 20px);

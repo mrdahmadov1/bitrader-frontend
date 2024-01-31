@@ -12,7 +12,7 @@
   }
 }
 
-.wrapper {
+.header {
   animation: fadeInDown 0.5s;
   position: absolute;
   top: 0;
@@ -51,6 +51,7 @@
   margin: auto;
   transition: transform 0.3s ease;
   overflow: hidden;
+  position: relative;
 }
 
 .btnJoin::after {

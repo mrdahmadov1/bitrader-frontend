@@ -27,7 +27,7 @@ export default function PartnerSlider() {
   );
 
   return (
-    <div className={`wrapper ${styles.wrapper}`}>
+    <div className={`${styles.partnerSlider}`}>
       <div className={`container ${styles.container}`}>
         <Swiper
           slidesPerView={1}

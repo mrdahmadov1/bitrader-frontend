@@ -27,7 +27,10 @@ const LanguageSwitcher = () => {
 
   return (
     <>
-      <div className={styles.container} onClick={handleLanguageChange}>
+      <div
+        className={styles.languageSwitcherContainer}
+        onClick={handleLanguageChange}
+      >
         <div className={styles.flag}>
           <img src={flags[languages.indexOf(selectedLanguage)]} alt="flag" />
         </div>
