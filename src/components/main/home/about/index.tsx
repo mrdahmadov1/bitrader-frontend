@@ -5,6 +5,7 @@ import { useInView } from "react-intersection-observer";
 import styles from "./assets/css/styles.module.css";
 import thumbImg from "./assets/images/thumb.png";
 import { useTranslation } from "react-i18next";
+import CountUp from "react-countup";
 
 const AboutSection = () => {
   const { t } = useTranslation();
@@ -68,7 +69,10 @@ const AboutSection = () => {
               className={`${styles.thumbContent} ${styles.thumbTopLeft}`}
             >
               <h3 className={styles.thumbTitle}>
-                <span>10</span> {t("home.about.thumbTitleTop")}
+                <span>
+                  <CountUp enableScrollSpy={true} duration={3} end={10} />
+                </span>
+                {t("home.about.thumbTitleTop")}
               </h3>
               <p className={styles.thumbDescription}>
                 {t("home.about.thumbDescriptionTop")}
@@ -93,7 +97,9 @@ const AboutSection = () => {
               className={`${styles.thumbContent} ${styles.thumbBottomRight}`}
             >
               <h3 className={styles.thumbTitle}>
-                <span>25</span>
+                <span>
+                  <CountUp enableScrollSpy={true} duration={5} end={25} />
+                </span>
                 {t("home.about.thumbTitleBottom")}
               </h3>
               <p className={styles.thumbDescription}>
