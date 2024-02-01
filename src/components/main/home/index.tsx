@@ -2,6 +2,7 @@ import Header from "../../shared/header";
 import LanguageSwitcher from "../../shared/languageSwitcher";
 import ThemeSwitcher from "../../shared/themeSwitcher";
 import AboutSection from "./about";
+import Feature from "./feature";
 import Intro from "./intro";
 import PartnerSlider from "./partnerSlider";
 
@@ -10,11 +11,12 @@ const HomeContainer = () => {
     <>
       <div className="wrapper">
         <Header />
-        <Intro />
         <LanguageSwitcher />
         <ThemeSwitcher />
+        <Intro />
         <PartnerSlider />
         <AboutSection />
+        <Feature />
       </div>
     </>
   );

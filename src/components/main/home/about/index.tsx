@@ -108,7 +108,7 @@ const AboutSection = () => {
             </motion.div>
           </div>
         </div>
-        <div className="col col-12 col-lg-6">
+        <div className="col col-12 col-lg-6 overflow-x-hidden">
           <motion.div
             initial="hidden"
             animate={controls4}

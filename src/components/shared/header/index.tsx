@@ -15,8 +15,7 @@ const Header = () => {
 
   return (
     <>
-      {/* HEADER  */}
-      <div className={`${styles.header}`}>
+      <header className={`${styles.header}`}>
         <div className="container">
           <div className={styles.container}>
             <div className="col col-5 col-lg-3 text-start">
@@ -39,7 +38,7 @@ const Header = () => {
             </div>
           </div>
         </div>
-      </div>
+      </header>
     </>
   );
 };

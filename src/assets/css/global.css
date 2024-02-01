@@ -34,7 +34,6 @@ body {
   line-height: 1.625;
   font-family: "Open Sans", sans-serif;
   cursor: default;
-  overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -82,4 +81,10 @@ h1 {
 h2 {
   font-size: calc(1.425rem + 1.8vw);
   line-height: 56px;
+}
+
+@media all and (min-width:1400px) {
+  h2 {
+    font-size: 3rem;
+  }
 }

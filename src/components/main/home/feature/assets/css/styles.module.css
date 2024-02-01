@@ -1,0 +1,277 @@
+@keyframes left-right {
+  0% {
+    transform: translateX(30px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.feature {
+  padding: 80px 0;
+  background: linear-gradient(152deg, var(--bg-trans-color) 0%, var(--bg-color) 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* .content {} */
+
+.contentHeader {
+  margin-bottom: 40px;
+}
+
+.contentTitle {
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+
+.contentTitle span {
+  color: var(--secondary-color);
+}
+
+/* .contentDescription {} */
+
+.contentNavList {
+  display: flex;
+  flex-direction: column;
+}
+
+.contentNavItem {
+  margin-bottom: 15px;
+  padding: 25px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.contentNavItem:last-child {
+  margin-bottom: 0px;
+}
+
+.contentNavItem.active {
+  background-color: var(--wh-color);
+  box-shadow: 0px 12px 30px rgba(33, 85, 186, 0.08);
+}
+
+.contentNavItem h6 {
+  margin-bottom: 0px;
+  font-size: 1.125rem;
+  color: var(--text-color);
+  font-family: 'Open Sans';
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.contentNavItem.active h6 {
+  color: var(--title-color);
+}
+
+.thumb {
+  margin-top: 3rem;
+  padding-top: 3rem;
+  position: relative;
+}
+
+.thumbImg img {
+  max-width: 100%;
+  height: auto;
+}
+
+.thumbContentTop,
+.thumbContentBottom {
+  position: absolute;
+  display: flex;
+  gap: 15px;
+  border: 2px solid var(--border-color);
+  background-color: var(--floating-content-bg-color-2);
+  box-shadow: -40px 40px 60px 0px rgba(5, 30, 54, 0.05);
+  backdrop-filter: blur(24px);
+}
+
+.thumbContentTop {
+  right: 0;
+  top: 0;
+  align-items: center;
+  border-radius: 8px 40px 32px 80px;
+  padding: 16px 0px 16px 36px;
+}
+
+/* .thumbContentTopImg {} */
+
+.thumbContentTopImg img {
+  width: 60px;
+}
+
+.thumbContentBottom {
+  left: 0;
+  bottom: 0;
+  align-items: center;
+  justify-content: center;
+  border-radius: 32px 60px 8px 40px;
+  padding: 16px;
+}
+
+.thumbContentTitle {
+  color: var(--brand-color);
+  font-family: 'Open Sans';
+  font-weight: 700;
+  line-height: 32px;
+  margin-bottom: 0;
+}
+
+.thumbContentDescription {
+  color: var(--title-color);
+  font-size: 1.125rem;
+  font-weight: 700;
+  max-inline-size: 18ch;
+  text-transform: capitalize;
+}
+
+.shape {
+  position: absolute;
+  top: 5%;
+  left: 71%;
+  z-index: 2;
+  animation: left-right 3s cubic-bezier(0.41, 0.15, 0.64, 0.86) infinite alternate;
+}
+
+.shape img {
+  width: 50px;
+}
+
+@media all and (min-width:576px) {
+  .shape {
+    top: 6%;
+    left: 65%;
+  }
+
+  .shape img {
+    width: 70px;
+  }
+}
+
+@media all and (min-width:768px) {
+  .container {
+    flex-direction: row;
+  }
+
+  .thumb {
+    margin-left: 3rem;
+  }
+
+  .thumbContentTop {
+    right: -20px;
+    top: -40px;
+  }
+
+  .thumbContentTopImg img {
+    max-width: 70px;
+  }
+
+  .thumbContentBottom {
+    padding: 16px 20px;
+    left: -14px;
+    bottom: -27px;
+  }
+
+  .content {
+    padding-right: 1.5rem;
+  }
+
+  .shape {
+    max-width: 75px;
+    top: 13%;
+    left: 50%;
+  }
+
+  .shape2 {
+    position: absolute;
+    content: '';
+    width: 570px;
+    height: 92%;
+    padding: 40px;
+    border: 2px solid var(--bg-grad-color);
+    border-bottom-left-radius: 25%;
+    top: -8%;
+    right: -24%;
+    transform: rotate(-10deg);
+    z-index: -1;
+  }
+
+  .shape2 span {
+    position: absolute;
+    content: "";
+    height: 96%;
+    width: 550px;
+    background: linear-gradient(219deg, var(--bg-grad-color-trans) 0%, var(--bg-grad-color) 100%);
+    border-bottom-left-radius: 25%;
+    top: 0%;
+    right: -1%;
+  }
+}
+
+@media all and (min-width:992px) {
+  .thumbContentTop {
+    right: 0;
+    top: -60px;
+  }
+
+  .thumbContentTopImg img {
+    max-width: 80px;
+    width: auto;
+  }
+
+  .thumbContentBottom {
+    padding: 25px 30px;
+  }
+
+  .shape2 {
+    width: 570px;
+    top: -10%;
+    right: -4%;
+  }
+}
+
+@media all and (min-width:1200px) {
+  .thumbContentTop {
+    padding-left: 48px;
+    top: -40px;
+  }
+
+  .thumbContentBottom {
+    left: 30px;
+    bottom: -5px;
+  }
+
+  .shape2 {
+    height: 100%;
+    width: 725px;
+    top: -12%;
+  }
+
+  .shape2 span {
+    height: 97%;
+    width: 700px;
+  }
+}
+
+@media all and (min-width:1400px) {
+
+  .shape2 {
+    width: 1000px;
+    top: -16%;
+    right: -15%;
+  }
+
+  .shape2 span {
+    width: 980px;
+  }
+}

@@ -38,6 +38,8 @@
 
 .intro {
   /* background-color: var(--bg-color); */
+  overflow: hidden;
+  position: relative;
 }
 
 /* Container Styles */
