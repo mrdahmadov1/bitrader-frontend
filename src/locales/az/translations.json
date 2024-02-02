@@ -47,6 +47,34 @@
       },
       "thumbDescription1": "Kredit Üçün Faiz Dərəcəsi",
       "thumbDescription2": "Ayrılmış vəsait"
+    },
+    "service": {
+      "serviceList": {
+        "strategy consulting": {
+          "title": "stratejik konsaltinq",
+          "description": "Sosial köməkçi, sizin qrafik və tələblərinizə uyğun olaraq rahatlıqla sizin üçün həyata keçirilmişdir, həyatı asanlaşdırır"
+        },
+        "financial advisory": {
+          "title": "maliyyə məsləhətçisi",
+          "description": "Modullar, prosesləri avtomatlaşdıraraq və qərar verməni təkmilləşdirərək smart ticarəti dəyişdirir."
+        },
+        "management": {
+          "title": "idarəetmə",
+          "description": "Bu sizin xəbər təhlil prosesləri və təkmilləşdirmə üçündür."
+        },
+        "supply optimization": {
+          "title": "təchizatın optimallaşdırılması",
+          "description": "Yeni kriptoqrafia platformasını yoxlamağınız lazımdır? Çox maraqlı və istifadə etməsi asandır!"
+        },
+        "HR consulting": {
+          "title": "HR konsaltinq",
+          "description": "dostlar, əməliyyat sifarişləri ilə bağlı bir qısa yeniləmə. Məzənnədə bəzi valyuta dəyişikliklər olub!"
+        },
+        "marketing consulting": {
+          "title": "marketinq konsaltinq",
+          "description": "Yalnız bildirək ki, qiymət bildirişi modulu prosesləri artıq online!"
+        }
+      }
     }
   }
 }

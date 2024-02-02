@@ -1,0 +1,23 @@
+.service {
+  padding: 80px 0;
+}
+
+.header {
+  margin: 0 auto 48px auto;
+  max-inline-size: 50ch;
+  text-align: center;
+}
+
+.title {
+  text-transform: capitalize;
+}
+
+.title span {
+  color: var(--secondary-color);
+}
+
+@media all and (min-width:992px) {
+  .service {
+    padding: 120px 0;
+  }
+}

@@ -3,12 +3,14 @@ import { ReactNode } from "react";
 type variantsType = {
   hidden: {
     opacity: number;
-    x: number;
+    x?: number;
+    y?: number;
   };
   visible: {
     opacity: number;
-    x: number;
-    transition: {
+    x?: number;
+    y?: number;
+    transition?: {
       duration: number;
     };
   };

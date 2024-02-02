@@ -18,6 +18,7 @@ export const updateThemeVariables = (theme: string) => {
     "--border-color-2": "rgba(255,255,255,0.08)",
     "--box-shadow": "0px 12px 30px rgba(14, 4, 0, 0.24)",
     "--bg-grad-color": "#253A33",
+    "--service-item-border-color": "#091E19",
   };
 
   const lightThemeStyles = {
@@ -37,6 +38,7 @@ export const updateThemeVariables = (theme: string) => {
     "--border-color-2": "#E6EDFB",
     "--box-shadow": "0px 12px 30px rgba(33, 85, 186, 0.08)",
     "--bg-grad-color": "#FFF",
+    "--service-item-border-color": "#fff",
   };
 
   const selectedThemeStyles =

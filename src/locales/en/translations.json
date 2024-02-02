@@ -47,6 +47,34 @@
       },
       "thumbDescription1": "Interest Rate For Loan",
       "thumbDescription2": "Available for loan"
+    },
+    "service": {
+      "serviceList": {
+        "strategy consulting": {
+          "title": "strategy consulting",
+          "description": "A social assistant that's flexible can accommodate your schedule and needs, making life easier"
+        },
+        "financial advisory": {
+          "title": "financial advisory",
+          "description": "Modules transform smart trading by automating processes and improving decision-making."
+        },
+        "management": {
+          "title": "management",
+          "description": "There, it's me, your friendly neighborhood reporter's news analyst processes and improving"
+        },
+        "supply optimization": {
+          "title": "supply optimization",
+          "description": "Hey, have you checked out that new cryptocurrency platform? It's pretty cool and easy to use!"
+        },
+        "HR consulting": {
+          "title": "HR consulting",
+          "description": "Hey guys, just a quick update on exchange orders. There have been some changes currency!"
+        },
+        "marketing consulting": {
+          "title": "marketing consulting",
+          "description": "Hey! Just wanted to let you know that the price notification module processes is nowlive!"
+        }
+      }
     }
   }
 }

@@ -1,0 +1,43 @@
+.serviceItem {
+  background: linear-gradient(152deg, var(--bg-trans-color) 0%, var(--bg-color) 100%);
+  border: 2px solid var(--service-item-border-color);
+  border-radius: 16px;
+  padding: 35px 15px;
+  text-align: center;
+  transition: all 0.3s ease-out;
+}
+
+.serviceItem:hover {
+  transform: translateY(-8px) !important;
+  box-shadow: none;
+  border-color: var(--brand-color);
+}
+
+.serviceImg {
+  margin: auto;
+  width: fit-content;
+  margin-bottom: 30px;
+  border-radius: 99px;
+  overflow: hidden;
+}
+
+.serviceImg img {
+  padding: 25px;
+  background-color: var(--wh-color);
+  box-shadow: 0px 8px 24px rgba(12, 52, 91, 0.04);
+}
+
+.serviceTitle {
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.serviceDescription {
+  line-height: 1.625rem;
+}
+
+@media all and (min-width:768px) {
+  .serviceItem {
+    padding: 52px 32px;
+  }
+}
