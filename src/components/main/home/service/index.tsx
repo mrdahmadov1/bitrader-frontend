@@ -1,19 +1,21 @@
+import { useTranslation } from "react-i18next";
 import { serviceList } from "../../../../constants/main/home/service";
 import styles from "./assets/css/styles.module.css";
 import ServiceItem from "./serviceItem";
 
 const ServiceSection = () => {
+  const { t } = useTranslation();
   return (
     <>
       <section className={styles.service}>
         <div className="container">
           <header className={styles.header}>
             <h2 className={styles.title}>
-              <span>services</span> we offer
+              <span>{t("home.service.titleSpan")}</span>{" "}
+              {t("home.service.title")}
             </h2>
             <p className={styles.description}>
-              We offer the best services around - from installations to repairs,
-              maintenance, and more!
+              {t("home.service.description")}
             </p>
           </header>
           <ul className="row g-4 align-items-center">

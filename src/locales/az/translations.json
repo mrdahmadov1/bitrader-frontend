@@ -49,6 +49,9 @@
       "thumbDescription2": "Ayrılmış vəsait"
     },
     "service": {
+      "titleSpan": "Xidmətlər",
+      "title": "",
+      "description": "Biz ətrafdakı ən yaxşı xidmətləri təklif edirik - quraşdırmadan təmirə, texniki xidmətə və s.!",
       "serviceList": {
         "strategy consulting": {
           "title": "stratejik konsaltinq",

@@ -49,6 +49,9 @@
       "thumbDescription2": "Available for loan"
     },
     "service": {
+      "titleSpan": "services",
+      "title": "we offer",
+      "description": "We offer the best services around - from installations to repairs, maintenance, and more!",
       "serviceList": {
         "strategy consulting": {
           "title": "strategy consulting",
