@@ -34,6 +34,19 @@
       "contentTitleSpan": "şirkətimizlə ",
       "contentDescription": "Salam! Şirkətimizlə tanış olun. Gördüyümüz işlər və bütün bunları həyata keçirən heyrətamiz komandamız haqqında məlumatlanmaq üçün bu fürsəti qaçırmayın! Şirkətimiz innovativ həllər yaratmaq və müştərilərimizə yüksək səviyyəli xidmət təqdim etməkdən ibarətdir. Başdan sona qədər biz gözləntilərin də üstündə nəticələr təqdim etməyə çalışırıq.",
       "btnMore": "daha çox"
+    },
+    "feature": {
+      "contentTitleSpan": "Qazanc ",
+      "contentTitle": "təklif edirik",
+      "contentDescription": "Məhsulumuzun ən yüksək keyfiyyətli xüsusiyyətləri ilə tam potensialınızı ortaya çıxarın.",
+      "contentNavList": {
+        "navItem1": "Yeni Layihələrinizə İnvestisiya Üçün Pul Verilməsi",
+        "navItem2": "Pul Üzərində Digərlərindən Daha Çox Təhlükəsizlik və Nəzarət",
+        "navItem3": "Mobil Ödəniş Bütün İnvestorlar Üçün Daha Rahat və Asandır",
+        "navItem4": "Bütün Əməliyyatlar Premium Üzvlərimiz Üçün Pulsuz Saxlanılır"
+      },
+      "thumbDescription1": "Kredit Üçün Faiz Dərəcəsi",
+      "thumbDescription2": "Ayrılmış vəsait"
     }
   }
 }

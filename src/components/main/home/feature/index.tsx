@@ -2,8 +2,11 @@ import styles from "./assets/css/styles.module.css";
 import shapeImg from "./assets/images/shape.png";
 import percentage1Img from "./assets/images/percentage-1.png";
 import thumb1Img from "./assets/images/thumb-1.png";
+import { useTranslation } from "react-i18next";
 
 const Feature = () => {
+  const { t } = useTranslation();
+
   return (
     <section className={styles.feature}>
       <div className={`container ${styles.container}`}>
@@ -11,29 +14,25 @@ const Feature = () => {
           <div className={styles.content}>
             <header className={styles.contentHeader}>
               <h2 className={styles.contentTitle}>
-                <span>benefits</span> we offer
+                <span>{t("home.feature.contentTitleSpan")}</span>
+                {t("home.feature.contentTitle")}
               </h2>
               <p className={styles.contentDescription}>
-                Unlock the full potential of our product with our amazing
-                features and top-notch.
+                {t("home.feature.contentDescription")}
               </p>
             </header>
             <ul className={styles.contentNavList}>
               <li className={`${styles.contentNavItem} ${styles.active}`}>
-                <h6>Lending money for investment of your new projects</h6>
+                <h6>{t("home.feature.contentNavList.navItem1")}</h6>
               </li>
               <li className={styles.contentNavItem}>
-                <h6>more Security and control over money from the rest</h6>
+                <h6>{t("home.feature.contentNavList.navItem2")}</h6>
               </li>
               <li className={styles.contentNavItem}>
-                <h6>
-                  Mobile payment is more flexible and easy for all investors
-                </h6>
+                <h6>{t("home.feature.contentNavList.navItem3")}</h6>
               </li>
               <li className={styles.contentNavItem}>
-                <h6>
-                  all transaction is kept free for the member of pro traders
-                </h6>
+                <h6>{t("home.feature.contentNavList.navItem4")}</h6>
               </li>
             </ul>
           </div>
@@ -45,7 +44,7 @@ const Feature = () => {
                 <img src={percentage1Img} alt="thumb content image" />
               </div>
               <p className={styles.thumbContentDescription}>
-                interest rate for loan
+                {t("home.feature.thumbDescription1")}
               </p>
             </div>
             <div className={styles.thumbImg}>
@@ -54,7 +53,7 @@ const Feature = () => {
             <div className={styles.thumbContentBottom}>
               <h3 className={styles.thumbContentTitle}>10M</h3>
               <p className={styles.thumbContentDescription}>
-                avialable for loan
+                {t("home.feature.thumbDescription2")}
               </p>
             </div>
           </div>

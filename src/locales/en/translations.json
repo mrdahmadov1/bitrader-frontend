@@ -34,6 +34,19 @@
       "contentTitleSpan": "meet our company",
       "contentDescription": "Hey there! So glad you stopped by to Meet Our Company. Don't miss out on this opportunity to learn about what we do and the amazing team that makes it all happen! Our company is all about creating innovative solutions and providing top-notch services to our clients. From start to finish, we're dedicated to delivering results that exceed expectations.",
       "btnMore": "explore more"
+    },
+    "feature": {
+      "contentTitleSpan": "benefits ",
+      "contentTitle": "we offer",
+      "contentDescription": "Unlock the full potential of our product with our amazing features and top-notch.",
+      "contentNavList": {
+        "navItem1": "Lending Money For Investment Of Your New Projects",
+        "navItem2": "More Security And Control Over Money From The Rest",
+        "navItem3": "Mobile Payment Is More Flexible And Easy For All Investors",
+        "navItem4": "All Transaction Is Kept Free For The Member Of Pro Traders"
+      },
+      "thumbDescription1": "Interest Rate For Loan",
+      "thumbDescription2": "Available for loan"
     }
   }
 }
