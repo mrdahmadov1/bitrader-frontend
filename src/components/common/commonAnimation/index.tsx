@@ -1,26 +1,7 @@
-import React, { ReactNode, useEffect } from "react";
+import React, { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-
-type variantsType = {
-  hidden: {
-    opacity: number;
-    x: number;
-  };
-  visible: {
-    opacity: number;
-    x: number;
-    transition: {
-      duration: number;
-    };
-  };
-};
-
-interface CommonAnimationProps {
-  variants: variantsType;
-  className?: string;
-  children: ReactNode;
-}
+import { CommonAnimationProps } from "../../../models/ICommonAnimationProps";
 
 const CommonAnimation: React.FC<CommonAnimationProps> = ({
   variants,
