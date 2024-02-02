@@ -11,8 +11,6 @@ i18n
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
-    fallbackLng: "en",
-    lng: "en",
     resources: {
       en: {
         translations: JSON.parse(JSON.stringify(en)),

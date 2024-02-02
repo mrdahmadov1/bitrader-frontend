@@ -7,7 +7,7 @@ import { useState } from "react";
 import { navContent } from "../../../../constants/main/home/feature";
 import { FeatureNavItem } from "../../../../models/IFeatureNavItem";
 
-const Feature = () => {
+const FeatureSection = () => {
   const { t } = useTranslation();
   const [content, setNavContent] = useState(navContent[1]);
 
@@ -103,4 +103,4 @@ const Feature = () => {
   );
 };
 
-export default Feature;
+export default FeatureSection;

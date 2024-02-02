@@ -7,6 +7,7 @@ import ru from "./assets/images/ru.png";
 
 const getLocalStorageLanguage = () =>
   localStorage.getItem("selectedLanguage") || languages[0];
+
 const setLocalStorageLanguage = (language: string) =>
   localStorage.setItem("selectedLanguage", language);
 

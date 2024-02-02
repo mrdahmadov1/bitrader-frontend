@@ -1,9 +1,10 @@
 import Header from "../../shared/header";
 import LanguageSwitcher from "../../shared/languageSwitcher";
 import ThemeSwitcher from "../../shared/themeSwitcher";
+import IntroSection from "./intro";
 import AboutSection from "./about";
-import Feature from "./feature";
-import Intro from "./intro";
+import FeatureSection from "./feature";
+import ServiceSection from "./service";
 import PartnerSlider from "./partnerSlider";
 
 const HomeContainer = () => {
@@ -13,10 +14,11 @@ const HomeContainer = () => {
         <Header />
         <LanguageSwitcher />
         <ThemeSwitcher />
-        <Intro />
+        <IntroSection />
         <PartnerSlider />
         <AboutSection />
-        <Feature />
+        <FeatureSection />
+        <ServiceSection />
       </div>
     </>
   );

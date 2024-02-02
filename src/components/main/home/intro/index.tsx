@@ -9,7 +9,7 @@ import { useTranslation } from "react-i18next";
 import { useSelector } from "react-redux";
 import { RootState } from "../../../../store/configureStore";
 
-const Intro = () => {
+const IntroSection = () => {
   const { t } = useTranslation();
   const currentTheme = useSelector(
     (state: RootState) => state.theme.currentTheme
@@ -69,4 +69,4 @@ const Intro = () => {
   );
 };
 
-export default Intro;
+export default IntroSection;
