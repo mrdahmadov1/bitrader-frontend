@@ -4,6 +4,8 @@ import styles from "./assets/css/styles.module.css";
 import { useDispatch, useSelector } from "react-redux";
 import { toggleTheme } from "../../../store/theme/themeSlice";
 import { RootState, AppDispatch } from "../../../store/configureStore";
+import { useEffect } from "react";
+import { updateThemeVariables } from "../../../helpers/updateThemeVariables";
 
 const ThemeSwitcher = () => {
   const dispatch = useDispatch<AppDispatch>();
@@ -11,10 +13,18 @@ const ThemeSwitcher = () => {
     (state: RootState) => state.theme.currentTheme
   );
 
+  useEffect(() => {
+    updateThemeVariables(currentTheme);
+  }, [currentTheme]);
+
+  const handleToggleTheme = () => {
+    dispatch(toggleTheme(currentTheme === "light" ? "dark" : "light"));
+  };
+
   return (
     <>
       <div
-        onClick={() => dispatch(toggleTheme())}
+        onClick={handleToggleTheme}
         className={styles.themeSwitcherContainer}
       >
         <div className={styles.theme}>

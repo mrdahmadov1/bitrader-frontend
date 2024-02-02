@@ -4,17 +4,21 @@ import styles from "./assets/css/styles.module.css";
 import en from "./assets/images/en.png";
 import az from "./assets/images/az.png";
 import ru from "./assets/images/ru.png";
-import { getCookie, setCookie } from "../../../utils/cookieUtils";
+
+const getLocalStorageLanguage = () =>
+  localStorage.getItem("selectedLanguage") || languages[0];
+const setLocalStorageLanguage = (language: string) =>
+  localStorage.setItem("selectedLanguage", language);
 
 const languages = ["en", "az", "ru"];
 const flags = [en, az, ru];
 
 const LanguageSwitcher = () => {
-  const initialLanguage = getCookie("selectedLanguage") || languages[0];
+  const initialLanguage = getLocalStorageLanguage();
   const [selectedLanguage, setSelectedLanguage] = useState(initialLanguage);
 
   useEffect(() => {
-    setCookie("selectedLanguage", selectedLanguage, 30);
+    setLocalStorageLanguage(selectedLanguage);
     i18n.changeLanguage(selectedLanguage);
   }, [selectedLanguage]);
 

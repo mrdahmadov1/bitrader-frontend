@@ -1,15 +1,19 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import { updateThemeVariables } from "../../helpers/updateThemeVariables";
-import { RootState } from "../configureStore";
+
+const setLocalStorageTheme = (newTheme: string) => {
+  localStorage.setItem("currentTheme", newTheme);
+};
+
+const getLocalStorageTheme = () => {
+  return localStorage.getItem("currentTheme") || "dark";
+};
 
 export const toggleTheme = createAsyncThunk(
   "theme/toggleTheme",
-  async (_, { getState }) => {
-    const currentTheme = (getState() as RootState).theme.currentTheme;
-    const newTheme = currentTheme === "dark" ? "light" : "dark";
-
+  async (newTheme: string) => {
     updateThemeVariables(newTheme);
-
+    setLocalStorageTheme(newTheme);
     return newTheme;
   }
 );
@@ -17,7 +21,7 @@ export const toggleTheme = createAsyncThunk(
 const themeSlice = createSlice({
   name: "theme",
   initialState: {
-    currentTheme: "light",
+    currentTheme: getLocalStorageTheme(),
   },
   reducers: {},
   extraReducers: (builder) => {
