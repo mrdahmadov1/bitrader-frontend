@@ -18,7 +18,11 @@ export const updateThemeVariables = (theme: string) => {
     "--border-color-2": "rgba(255,255,255,0.08)",
     "--box-shadow": "0px 12px 30px rgba(14, 4, 0, 0.24)",
     "--bg-grad-color": "#253A33",
+    "--bg-grad-color-3": "rgba(32,56,51,0.5)",
+    "--bg-grad-color-trans-3": "rgba(2,29,21,0)",
     "--service-item-border-color": "#091E19",
+    "--bg-shape-color-2": "rgba(213,229,249,0.16)",
+    "--bg-shape-color-trans-2": "rgba(255,255,255,0.04)",
   };
 
   const lightThemeStyles = {
@@ -38,7 +42,11 @@ export const updateThemeVariables = (theme: string) => {
     "--border-color-2": "#E6EDFB",
     "--box-shadow": "0px 12px 30px rgba(33, 85, 186, 0.08)",
     "--bg-grad-color": "#FFF",
+    "--bg-grad-color-3": "#E9EfF7",
+    "--bg-grad-color-trans-3": "rgba(240, 244, 250, 0.16)",
     "--service-item-border-color": "#fff",
+    "--bg-shape-color-2": "#D5E5F9",
+    "--bg-shape-color-trans-2": "rgba(255,255,255,0.22)",
   };
 
   const selectedThemeStyles =

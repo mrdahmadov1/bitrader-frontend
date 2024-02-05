@@ -1,0 +1,184 @@
+@keyframes floating {
+  0% {
+    transform: translateY(30px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.roadmap {
+  background: linear-gradient(152deg, var(--bg-trans-color) 0%, var(--bg-color) 100%);
+  padding: 80px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.shape1 {
+  position: absolute;
+  width: auto;
+  top: 6%;
+  left: 6%;
+  animation: floating 3s cubic-bezier(0.41, 0.15, 0.64, 0.86) infinite alternate;
+}
+
+.shape1 img {
+  width: 32px;
+  max-width: 100%;
+  height: auto;
+}
+
+.header {
+  margin: 0 auto 48px auto;
+  max-inline-size: 50ch;
+  text-align: center;
+}
+
+.title {
+  text-transform: capitalize;
+}
+
+.title span {
+  color: var(--secondary-color);
+}
+
+.roadmapList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  position: relative;
+}
+
+.roadmapList div:nth-child(2n-1) {
+  margin-left: auto;
+  background: linear-gradient(91deg, var(--bg-grad-color-3) 0%, var(--bg-grad-color-trans-3) 100%);
+}
+
+.roadmapList div:nth-child(2n) {
+  margin-right: auto;
+  background: linear-gradient(91deg, var(--bg-grad-color-trans-3) 0%, var(--bg-grad-color-3) 100%);
+}
+
+
+@media all and (min-width:576px) {
+  .shape1 {
+    top: 3%;
+    left: 7%;
+  }
+}
+
+@media all and (min-width:768px) {
+  .shape1 {
+    left: 2%;
+    left: 1%;
+  }
+
+  .shape1 img {
+    width: 84px;
+  }
+
+  .shape2 {
+    position: absolute;
+    content: "";
+    height: 50%;
+    border: 2px solid var(--bg-shape-color-2);
+    padding: 40px;
+    border-radius: 100px 213px 100px 100px;
+    border-left: transparent;
+    border-bottom: transparent;
+    transform: rotate(45deg);
+    width: 920px;
+    top: -16%;
+    left: -122%;
+    z-index: -999;
+  }
+
+  .shape2 span {
+    position: absolute;
+    content: "";
+    height: 96%;
+    width: 880px;
+    top: 1%;
+    left: 2%;
+    background: linear-gradient(109deg, var(--bg-shape-color-trans-2) 0%, var(--bg-shape-color-2) 100%);
+    border-radius: 100px 213px 100px 100px;
+  }
+
+  .roadmapList {
+    gap: 0;
+  }
+
+  .roadmapList::before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 10px;
+    background-color: var(--border-color);
+    border-radius: 8px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .roadmapList::after {
+    position: absolute;
+    content: "";
+    height: 50%;
+    width: 10px;
+    background-color: var(--brand-color);
+    border-radius: 8px;
+    top: -1px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+
+  .roadmapList div:nth-child(2n-1),
+  .roadmapList div:nth-child(2n) {
+    width: calc(50% - 3rem);
+  }
+
+}
+
+@media all and (min-width:992px) {
+  .roadmap {
+    padding: 120px 0;
+  }
+
+  .shape1 {
+    top: 4%;
+    left: 4%;
+  }
+
+  .shape2 {
+    top: -16%;
+    left: -80%;
+  }
+}
+
+@media all and (min-width:1200px) {
+  .shape1 {
+    top: 5%;
+    left: 5%;
+  }
+
+  .shape1 img {
+    width: 100px;
+  }
+
+  .shape2 {
+    left: -58%;
+  }
+}
+
+@media all and (min-width:1400px) {
+  .shape1 {
+    top: 8%;
+    left: 5%;
+  }
+
+  .shape2 {
+    left: -30%;
+  }
+}

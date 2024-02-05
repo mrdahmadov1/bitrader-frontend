@@ -1,0 +1,25 @@
+.roadmapItem {
+  padding: 20px;
+  border-radius: 16px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-transform: capitalize;
+}
+
+.header span {
+  font-size: calc(1.325rem + 0.7714285714vw);
+  font-family: "Anek Telugu";
+  font-weight: 600;
+  color: var(--brand-color);
+  margin-block-start: -10px;
+}
+
+@media all and (min-width:768px) {
+  .roadmapItem {
+    padding: 40px;
+  }
+}

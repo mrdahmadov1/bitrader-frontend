@@ -6,6 +6,7 @@ import AboutSection from "./about";
 import FeatureSection from "./feature";
 import ServiceSection from "./service";
 import PartnerSlider from "./partnerSlider";
+import RoadmapSection from "./roadmap";
 
 const HomeContainer = () => {
   return (
@@ -19,6 +20,7 @@ const HomeContainer = () => {
         <AboutSection />
         <FeatureSection />
         <ServiceSection />
+        <RoadmapSection />
       </div>
     </>
   );

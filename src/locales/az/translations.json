@@ -78,6 +78,43 @@
           "description": "Yalnız bildirək ki, qiymət bildirişi modulu prosesləri artıq online!"
         }
       }
+    },
+    "roadmap": {
+      "title": "məhsulun ",
+      "titleSpan": "yol xəritəsi",
+      "description": "Yol xəritəsi irəliləyən yolunu göstərir, komandaların plan qoymalarına kömək edir və məhsulun çatdırılmasını təmin edir.",
+      "roadmapList": {
+        "project research": {
+          "title": "layihənin tədqiqatı",
+          "order": "a1",
+          "description": "Layihə tədqiqatı hər uğurlu layihənin əsasıdır. Məlumat toplamaq, məqsədləri təyin etmək və layihənin əldə edilə biləcəyini təmin etmək üçün məlumatları təhlil etməni içərər. Düzgün tədqiqat olmadan layihələr bilik çatışmazlığı səbəbiylə uğursuz ola bilər."
+        },
+        "framing idea": {
+          "title": "fikirin çərçivəsini qoymaq",
+          "order": "a2",
+          "description": "Gələcək olan layihəmiz üçün fikirin çərçivəsini qoymaq lazımdır. Çərçivəni böyük tutaraq başlayaq və sonra detallara keçək. Beləliklə görək ki, bizim viziyamız düzgün istiqamətdə qalarkən detalları necə düzəltdik."
+        },
+        "design first draft": {
+          "title": "dizaynın ilkin nümunəsi",
+          "order": "a3",
+          "description": "Dostlar, sadəcə dizaynın ilk nümunəsini bölüşürük! Minimalist bir görünüş seçin, bir qədər rəngli. Nə düşünürsünüz? Hər təklif və feedback-a açığam. Bu ümumilikdə necə çıxacağını görmək üçündür!"
+        },
+        "final design": {
+          "title": "son dizayn",
+          "order": "a4",
+          "description": "Bir çox təkrarlar və sonsuz düzəltmələrdən sonra nəhayət son dizayna çatdıq. O stil, modern və tam olaraq hədəflədiyimiz dizaynı mükəmməl şəkildə özündə əks etdirir. Onu start etmək üçün artıq hazırıq!"
+        },
+        "project development": {
+          "title": "layihənin inkişafı",
+          "order": "a5",
+          "description": "Beləliklə, biz burada layihənin inkişafında dərinləşmişik, və işlər yaxşı gedir. Bizim üçün sağlam bir plan var və komandamız hamı güclü işləyir. Hələ işlər var, amma biz inşa etdiyimiz şeydən məyus deyilik."
+        },
+        "launch project": {
+          "title": "layihəni başlatmaq",
+          "order": "a6",
+          "description": "Yaxşı, dostlar, bu layihəni qaldırmağın vaxtıdır! Və indi başlamağın vaxtıdır. Bütün hissələri yerində olduğu üçün, işə başlayaq və bu işi başa vuraq!"
+        }
+      }
     }
   }
 }

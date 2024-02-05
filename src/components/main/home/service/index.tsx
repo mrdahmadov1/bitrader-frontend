@@ -11,7 +11,7 @@ const ServiceSection = () => {
         <div className="container">
           <header className={styles.header}>
             <h2 className={styles.title}>
-              <span>{t("home.service.titleSpan")}</span>{" "}
+              <span>{t("home.service.titleSpan")}</span>
               {t("home.service.title")}
             </h2>
             <p className={styles.description}>
