@@ -18,7 +18,7 @@ const ServiceSection = () => {
               {t("home.service.description")}
             </p>
           </header>
-          <ul className="row g-4 align-items-center">
+          <ul className="row g-4 align-items-stretch">
             {serviceList.map((service, index) => (
               <ServiceItem key={index} service={service} />
             ))}

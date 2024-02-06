@@ -206,7 +206,7 @@
 
 .hero img {
   width: 100%;
-  animation: floating 2s cubic-bezier(0.41, 0.15, 0.64, 0.86) infinite alternate;
+  animation: floating 1.5s cubic-bezier(0.41, 0.15, 0.64, 0.86) infinite alternate;
 }
 
 /* Responsive Styles */

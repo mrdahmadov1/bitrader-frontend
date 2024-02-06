@@ -1,4 +1,10 @@
+.serviceLink {
+  height: 100%;
+}
+
 .serviceItem {
+  height: 100%;
+  margin: auto;
   background: linear-gradient(152deg, var(--bg-trans-color) 0%, var(--bg-color) 100%);
   border: 2px solid var(--service-item-border-color);
   border-radius: 16px;

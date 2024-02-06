@@ -8,12 +8,18 @@ import styles from "./assets/css/styles.module.css";
 import { useTranslation } from "react-i18next";
 import { useSelector } from "react-redux";
 import { RootState } from "../../../../store/configureStore";
+import CommonAnimation from "../../../common/commonAnimation";
 
 const IntroSection = () => {
   const { t } = useTranslation();
   const currentTheme = useSelector(
     (state: RootState) => state.theme.currentTheme
   );
+
+  const variants1 = {
+    hidden: { opacity: 0, x: -100 },
+    visible: { opacity: 1, x: 0, transition: { duration: 1 } },
+  };
 
   return (
     <>
@@ -26,7 +32,10 @@ const IntroSection = () => {
         </div>
         <div className="container">
           <div className={styles.container}>
-            <div className={`col col-12 col-md-7 col-lg-6 ${styles.content}`}>
+            <CommonAnimation
+              variants={variants1}
+              className={`col col-12 col-md-7 col-lg-6 ${styles.content}`}
+            >
               <div className={styles.imgCoin}>
                 <img src={coinImg} alt="coin image" />
               </div>
@@ -58,7 +67,7 @@ const IntroSection = () => {
                   ))}
                 </ul>
               </div>
-            </div>
+            </CommonAnimation>
             <div className={`col col-12 col-md-5 col-lg-6 ${styles.hero}`}>
               <img src={heroImg} alt="hero image" />
             </div>

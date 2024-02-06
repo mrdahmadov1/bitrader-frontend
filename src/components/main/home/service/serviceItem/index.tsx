@@ -20,7 +20,7 @@ const ServiceItem: React.FC<ServiceItemProps> = ({ service }) => {
   return (
     <>
       <li className="col-sm-6 col-lg-4">
-        <Link to="services">
+        <Link to="services" className={styles.serviceLink}>
           <CommonAnimation variants={variants} className={styles.serviceItem}>
             <div className={styles.serviceImg}>
               <img
