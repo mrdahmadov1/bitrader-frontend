@@ -115,6 +115,53 @@
           "description": "Alright folks, it's time to get this project off the ground! We've been talking about it for weeks, and now it's time to launch. We've got all the pieces in place, so let's get to work and make this thing happen!"
         }
       }
+    },
+    "pricing": {
+      "titleLeft": "our ",
+      "titleSpan": "pricing ",
+      "titleRight": "plan",
+      "description": "We offer the best pricings around - from installations to repairs, maintenance, and more!",
+      "planTitleSpan": "monthly",
+      "planList": [
+        {
+          "isVertical": true,
+          "variant": -100,
+          "price": 99,
+          "title": "basic",
+          "offerList": [
+            "weekly online meeting",
+            "unlimited learning access",
+            "24/7 technical support",
+            "personal training"
+          ]
+        },
+        {
+          "isVertical": false,
+          "variant": 100,
+          "price": 149,
+          "title": "standard",
+          "offerList": [
+            "weekly online meeting",
+            "unlimited learning access",
+            "24/7 technical support",
+            "personal training",
+            "business analysis"
+          ]
+        },
+        {
+          "isVertical": true,
+          "variant": 100,
+          "price": 199,
+          "title": "premium",
+          "offerList": [
+            "with all standard features",
+            "unlimited learning access",
+            "24/7 technical support",
+            "personal training"
+          ]
+        }
+      ],
+      "btnChoose": "choose plan"
     }
   }
 }

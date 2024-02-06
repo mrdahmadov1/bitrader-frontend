@@ -1,0 +1,101 @@
+.planItem {
+  background-color: var(--wh-color);
+  border: 2px solid transparent;
+  box-shadow: 0px 16px 40px 0px rgba(26, 64, 137, 0.06);
+  border-radius: 16px;
+  padding: 30px 25px;
+  transition: all 0.3s ease-out;
+}
+
+.planItem:hover,
+.planItem.active {
+  border: 2px solid var(--brand-color);
+  box-shadow: 0px 16px 40px 0px rgba(26, 64, 137, 0.06);
+}
+
+.planTop {
+  border-bottom: 1px solid var(--border-color-11);
+}
+
+.planTop h6 {
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.planTop h3 {
+  color: var(--secondary-color);
+  margin-bottom: 25px;
+}
+
+.planTop h3 span {
+  text-transform: capitalize;
+  font-size: 1.125rem;
+  font-family: 'Open Sans';
+  color: var(--text-color-4);
+}
+
+.planMiddle {
+  padding: 40px 0;
+}
+
+.offerItem {
+  margin-bottom: 15px;
+  color: var(--title-color);
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+}
+
+.offerItem span {
+  margin-right: 5px;
+}
+
+.btnChoose {
+  color: var(--brand-color);
+  transition: all 0.3s ease-out;
+  width: 100%;
+  border: 1px solid var(--brand-color);
+  font-family: 'Open Sans';
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 600;
+  text-transform: capitalize;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 5px;
+}
+
+.planItem.active .btnChoose {
+  background-color: var(--brand-color);
+  color: #0C263A;
+}
+
+.btnChoose:hover {
+  color: #0C263A;
+  background: var(--brand-color);
+}
+
+.planItem.active .btnChoose::after {
+  position: absolute;
+  background: var(--bg-white);
+  content: "";
+  height: 155px;
+  left: -75px;
+  opacity: 0.2;
+  top: -50px;
+  transform: rotate(35deg);
+  transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+  width: 50px;
+  z-index: -10;
+}
+
+
+.planItem.active .btnChoose:hover::after {
+  left: 120%;
+}
+
+.planItem.active .btnChoose:hover,
+.btnChoose:hover {
+  transform: translateY(-2px);
+}

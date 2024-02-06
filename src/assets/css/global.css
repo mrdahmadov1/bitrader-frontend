@@ -96,6 +96,11 @@ h5 {
   line-height: 1.25;
 }
 
+h6 {
+  font-size: 1.25rem;
+  line-height: 1.25;
+}
+
 @media all and (min-width:1400px) {
   h2 {
     font-size: 3rem;

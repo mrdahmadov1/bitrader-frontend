@@ -23,6 +23,8 @@ export const updateThemeVariables = (theme: string) => {
     "--service-item-border-color": "#091E19",
     "--bg-shape-color-2": "rgba(213,229,249,0.16)",
     "--bg-shape-color-trans-2": "rgba(255,255,255,0.04)",
+    "--border-color-11": "rgba(255,255,255,0.1)",
+    "--text-color-4": "#B0B3BF",
   };
 
   const lightThemeStyles = {
@@ -47,6 +49,8 @@ export const updateThemeVariables = (theme: string) => {
     "--service-item-border-color": "#fff",
     "--bg-shape-color-2": "#D5E5F9",
     "--bg-shape-color-trans-2": "rgba(255,255,255,0.22)",
+    "--border-color-11": "#E6E6E6",
+    "--text-color-4": "#B0B3BF",
   };
 
   const selectedThemeStyles =

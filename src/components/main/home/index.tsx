@@ -7,6 +7,7 @@ import FeatureSection from "./feature";
 import ServiceSection from "./service";
 import PartnerSlider from "./partnerSlider";
 import RoadmapSection from "./roadmap";
+import PricingSection from "./pricing";
 
 const HomeContainer = () => {
   return (
@@ -21,6 +22,7 @@ const HomeContainer = () => {
         <FeatureSection />
         <ServiceSection />
         <RoadmapSection />
+        <PricingSection />
       </div>
     </>
   );

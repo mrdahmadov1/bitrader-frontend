@@ -115,6 +115,53 @@
           "description": "Yaxşı, dostlar, bu layihəni qaldırmağın vaxtıdır! Və indi başlamağın vaxtıdır. Bütün hissələri yerində olduğu üçün, işə başlayaq və bu işi başa vuraq!"
         }
       }
+    },
+    "pricing": {
+      "titleLeft": "bizim ",
+      "titleSpan": "aylıq ",
+      "titleRight": "plan",
+      "description": "Təklif edirik - quraşdırmalardan təmirə, təmir işlərinə, baxım və daha çoxu!",
+      "planTitleSpan": "aylıq",
+      "planList": [
+        {
+          "isVertical": true,
+          "variant": -100,
+          "price": 99,
+          "title": "sadə",
+          "offerList": [
+            "həftəlik onlayn görüş",
+            "limitsiz öyrənmə",
+            "24/7 texniki dəstək",
+            "şəxsi təlim"
+          ]
+        },
+        {
+          "isVertical": false,
+          "variant": 100,
+          "price": 149,
+          "title": "standart",
+          "offerList": [
+            "həftəlik onlayn görüş",
+            "limitsiz öyrənmə",
+            "24/7 texniki dəstək",
+            "şəxsi təlim",
+            "biznes təhlili"
+          ]
+        },
+        {
+          "isVertical": true,
+          "variant": 100,
+          "price": 199,
+          "title": "premium",
+          "offerList": [
+            "bütün standart xüsusiyyətlərlə",
+            "limitsiz öyrənmə",
+            "24/7 texniki dəstək",
+            "şəxsi təlim"
+          ]
+        }
+      ],
+      "btnChoose": "planı seç"
     }
   }
 }

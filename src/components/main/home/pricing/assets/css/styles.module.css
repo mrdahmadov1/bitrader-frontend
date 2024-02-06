@@ -1,0 +1,148 @@
+@keyframes floating {
+  0% {
+    transform: translateY(30px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.pricing {
+  padding: 80px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.shape1 {
+  position: absolute;
+  width: auto;
+  top: 6%;
+  right: 6%;
+  animation: floating 3s cubic-bezier(0.41, 0.15, 0.64, 0.86) infinite alternate;
+}
+
+.shape1 img {
+  width: 40px;
+  max-width: 100%;
+  height: auto;
+}
+
+
+.header {
+  margin: 0 auto 48px auto;
+  max-inline-size: 50ch;
+  text-align: center;
+}
+
+.title {
+  text-transform: capitalize;
+}
+
+.title span {
+  color: var(--secondary-color);
+}
+
+.planList {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  row-gap: 1.5rem;
+}
+
+@media all and (min-width:576px) {
+  .shape1 {
+    top: 3%;
+    right: 7%;
+  }
+}
+
+@media all and (min-width:768px) {
+  .shape1 {
+    top: 2%;
+    right: 1%;
+  }
+
+  .shape1 img {
+    width: 84px;
+  }
+
+  .shape2 {
+    position: absolute;
+    content: "";
+    width: 1050px;
+    height: 95%;
+    border: 2px solid var(--bg-shape-color-2);
+    padding: 40px;
+    border-radius: 100px 213px 100px 100px;
+    opacity: 0.4;
+    top: 3%;
+    left: -6%;
+    transform: rotate(25deg);
+    z-index: -1;
+  }
+
+  .shape2 span {
+    position: absolute;
+    content: "";
+    top: 2%;
+    left: 2%;
+    height: 96%;
+    width: 1000px;
+    background: linear-gradient(4deg, var(--bg-shape-color-trans-2) 0%, var(--bg-shape-color-2) 100%);
+    border-radius: 100px 213px 100px 100px;
+  }
+
+  .planList li:nth-child(2n-1)>div {
+    margin-right: 1.5rem;
+  }
+}
+
+
+@media all and (min-width:992px) {
+  .pricing {
+    padding: 120px 0;
+  }
+
+  .shape1 {
+    top: 4%;
+    right: 4%;
+  }
+
+  .shape2 {
+    top: 8%;
+    left: 12%;
+  }
+
+  .planList li:nth-child(3)>div {
+    margin-right: 0;
+    margin-left: 1.5rem;
+  }
+}
+
+@media all and (min-width:1200px) {
+  .shape1 {
+    top: 5%;
+    right: 5%;
+  }
+
+  .shape1 img {
+    width: 100px;
+  }
+
+  .shape2 {
+    top: 0%;
+    left: 11%;
+  }
+}
+
+@media all and (min-width:1400px) {
+  .shape1 {
+    top: 8%;
+    right: 5%;
+  }
+
+  .shape2 {
+    left: 27%;
+  }
+}
