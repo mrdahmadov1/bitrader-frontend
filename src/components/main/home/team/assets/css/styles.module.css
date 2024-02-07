@@ -1,0 +1,87 @@
+.team {
+  padding: 80px 0;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(152deg, var(--bg-trans-color) 0%, var(--bg-color) 100%);
+}
+
+.header {
+  margin: 0 auto 48px auto;
+  max-inline-size: 50ch;
+  text-align: center;
+}
+
+.title {
+  text-transform: capitalize;
+}
+
+.title span {
+  color: var(--secondary-color);
+}
+
+.memberList {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  row-gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+
+.btnMore {
+  display: inline-block;
+  margin-top: 30px;
+  background-color: var(--brand-color);
+  border: 1px solid var(--brand-color);
+  border-radius: 8px;
+  color: #0C263A;
+  font-family: 'Open Sans';
+  font-weight: 600;
+  padding: 0.75rem 1rem;
+  text-transform: capitalize;
+  transition: all 0.3s ease-out;
+  position: relative;
+  overflow: hidden;
+}
+
+
+.btnMore:hover {
+  transform: translateY(-1px);
+}
+
+.btnMore::after {
+  position: absolute;
+  background: var(--bg-white);
+  content: "";
+  height: 155px;
+  left: -75px;
+  opacity: 0.2;
+  top: -50px;
+  transform: rotate(35deg);
+  transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+  width: 50px;
+  z-index: -9999;
+}
+
+.btnMore:hover::after {
+  left: 120%;
+  transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+@media all and (min-width:768px) {
+  .btnMore {
+    margin-top: 40px;
+    padding: 1rem 1.25rem;
+  }
+}
+
+@media all and (min-width:992px) {
+  .team {
+    padding: 120px 0;
+  }
+
+  .btnMore {
+    padding: 1rem 1.75rem;
+  }
+}

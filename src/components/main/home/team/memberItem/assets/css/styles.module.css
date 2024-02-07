@@ -1,0 +1,41 @@
+.memberItem {
+  position: relative;
+}
+
+.thumb {
+  overflow: hidden;
+}
+
+.thumb img {
+  width: 100%;
+  height: auto;
+}
+
+.content {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: var(--bg-team-content);
+  backdrop-filter: blur(5px);
+  padding: 12px 8px;
+  margin: 8px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.title {
+  font-family: 'Open Sans';
+  color: var(--title-color);
+  text-transform: capitalize;
+}
+
+@media all and (min-width:576px) {
+  .memberItem:nth-child(n+1) {
+    margin-left: 0.75rem;
+  }
+
+  .memberItem:nth-child(2n-1) {
+    margin-right: 0.75rem;
+  }
+}

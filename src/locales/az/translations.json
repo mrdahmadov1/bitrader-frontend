@@ -153,6 +153,46 @@
         }
       },
       "btnChoose": "planı seç"
+    },
+    "team": {
+      "title": "bizim ",
+      "titleSpan": "mütəxəssislərimiz",
+      "description": "Salamlar, qarşınızda möhtəşəm məsləhətçilərimiz var! Onlar buradadırlar ki, hər hansı şeydə bizə kömək etsinlər və rəhbərlik etsinlər.",
+      "memberList": {
+        "dianne russell": {
+          "name": "dianne russell",
+          "branch": "baş trader"
+        },
+        "theresa webb": {
+          "name": "theresa webb",
+          "branch": "strategik məsləhətçi"
+        },
+        "courtney henry": {
+          "name": "courtney henry",
+          "branch": "menecment məsləhətçisi"
+        },
+        "albert flores": {
+          "name": "albert flores",
+          "branch": "development mütəxəssisi"
+        },
+        "darrell steward": {
+          "name": "darrell steward",
+          "branch": "growth strategist"
+        },
+        "wade warren": {
+          "name": "wade warren",
+          "branch": "trade məsləhətçisi"
+        },
+        "cody fisher": {
+          "name": "cody fisher",
+          "branch": "HR məsləhətçisi"
+        },
+        "bessie cooper": {
+          "name": "bessie cooper",
+          "branch": "maliyyə məsləhətçisi"
+        }
+      },
+      "btnMore": "daha çox göstər"
     }
   }
 }

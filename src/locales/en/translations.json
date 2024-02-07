@@ -153,6 +153,46 @@
         }
       },
       "btnChoose": "choose plan"
+    },
+    "team": {
+      "title": "meet our ",
+      "titleSpan": "advisers",
+      "description": "Hey everyone, meet our amazing advisers! They're here to help and guide us through anything.",
+      "memberList": {
+        "dianne russell": {
+          "name": "dianne russell",
+          "branch": "trade captain"
+        },
+        "theresa webb": {
+          "name": "theresa webb",
+          "branch": "strategic advisor"
+        },
+        "courtney henry": {
+          "name": "courtney henry",
+          "branch": "management consultant"
+        },
+        "albert flores": {
+          "name": "albert flores",
+          "branch": "development specialist"
+        },
+        "darrell steward": {
+          "name": "darrell steward",
+          "branch": "growth strategist"
+        },
+        "wade warren": {
+          "name": "wade warren",
+          "branch": "trade consultant"
+        },
+        "cody fisher": {
+          "name": "cody fisher",
+          "branch": "HR consultant"
+        },
+        "bessie cooper": {
+          "name": "bessie cooper",
+          "branch": "financial advisor"
+        }
+      },
+      "btnMore": "view more"
     }
   }
 }
