@@ -2,13 +2,10 @@ import { useTranslation } from "react-i18next";
 import shapeImg from "../roadmap/assets/images/shape-1.png";
 import styles from "./assets/css/styles.module.css";
 import PlanItem from "./planItem";
+import { planList } from "../../../../constants/main/home/pricing";
 
 const PricingSection = () => {
   const { t } = useTranslation();
-
-  const planList = t(`home.pricing.planList`, {
-    returnObjects: true,
-  }) as [];
 
   return (
     <>

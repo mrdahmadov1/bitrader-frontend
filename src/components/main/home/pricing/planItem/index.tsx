@@ -8,6 +8,10 @@ import { useTranslation } from "react-i18next";
 const PlanItem: React.FC<PlanItemProps> = ({ item }) => {
   const { t } = useTranslation();
 
+  const offerList = t(`home.pricing.planList.${item.title}.offerList`, {
+    returnObjects: true,
+  }) as string[];
+
   const variants1 = {
     hidden: {
       opacity: 0,
@@ -34,7 +38,7 @@ const PlanItem: React.FC<PlanItemProps> = ({ item }) => {
           </div>
           <div className={styles.planMiddle}>
             <ul className={styles.offerList}>
-              {item.offerList.map((offer: string, index: number) => (
+              {offerList.map((offer: string, index: number) => (
                 <li key={index} className={styles.offerItem}>
                   <span>
                     <img src={checkDarkImg} alt="check dark image" />

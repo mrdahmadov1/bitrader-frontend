@@ -122,11 +122,8 @@
       "titleRight": "plan",
       "description": "Təklif edirik - quraşdırmalardan təmirə, təmir işlərinə, baxım və daha çoxu!",
       "planTitleSpan": "aylıq",
-      "planList": [
-        {
-          "isVertical": true,
-          "variant": -100,
-          "price": 99,
+      "planList": {
+        "basic": {
           "title": "sadə",
           "offerList": [
             "həftəlik onlayn görüş",
@@ -135,10 +132,7 @@
             "şəxsi təlim"
           ]
         },
-        {
-          "isVertical": false,
-          "variant": 100,
-          "price": 149,
+        "standard": {
           "title": "standart",
           "offerList": [
             "həftəlik onlayn görüş",
@@ -148,10 +142,7 @@
             "biznes təhlili"
           ]
         },
-        {
-          "isVertical": true,
-          "variant": 100,
-          "price": 199,
+        "premium": {
           "title": "premium",
           "offerList": [
             "bütün standart xüsusiyyətlərlə",
@@ -160,7 +151,7 @@
             "şəxsi təlim"
           ]
         }
-      ],
+      },
       "btnChoose": "planı seç"
     }
   }

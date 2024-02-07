@@ -122,11 +122,8 @@
       "titleRight": "plan",
       "description": "We offer the best pricings around - from installations to repairs, maintenance, and more!",
       "planTitleSpan": "monthly",
-      "planList": [
-        {
-          "isVertical": true,
-          "variant": -100,
-          "price": 99,
+      "planList": {
+        "basic": {
           "title": "basic",
           "offerList": [
             "weekly online meeting",
@@ -135,10 +132,7 @@
             "personal training"
           ]
         },
-        {
-          "isVertical": false,
-          "variant": 100,
-          "price": 149,
+        "standard": {
           "title": "standard",
           "offerList": [
             "weekly online meeting",
@@ -148,10 +142,7 @@
             "business analysis"
           ]
         },
-        {
-          "isVertical": true,
-          "variant": 100,
-          "price": 199,
+        "premium": {
           "title": "premium",
           "offerList": [
             "with all standard features",
@@ -160,7 +151,7 @@
             "personal training"
           ]
         }
-      ],
+      },
       "btnChoose": "choose plan"
     }
   }
