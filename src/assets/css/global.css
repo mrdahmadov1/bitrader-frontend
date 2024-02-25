@@ -28,6 +28,7 @@
   --bg-grad-color-trans: rgba(255, 255, 255, 0);
   --bg-grad-color-trans-3: rgba(240, 244, 250, 0.16);
   --service-item-border-color: #fff;
+  --bg-shape-color: #b8cfeb
 }
 
 body {

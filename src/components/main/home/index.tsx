@@ -9,6 +9,7 @@ import PartnerSlider from "./partnerSlider";
 import RoadmapSection from "./roadmap";
 import PricingSection from "./pricing";
 import TeamSection from "./team";
+import TestimonialSection from "./testimonial";
 
 const HomeContainer = () => {
   return (
@@ -25,6 +26,7 @@ const HomeContainer = () => {
         <RoadmapSection />
         <PricingSection />
         <TeamSection />
+        <TestimonialSection />
       </div>
     </>
   );
