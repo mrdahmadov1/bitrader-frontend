@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import styles from "./assets/css/styles.module.css";
 import BlogItem from "./testimonialItem";
-
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper/modules";
 import "swiper/css";
@@ -28,11 +27,11 @@ const TestimonialSection = () => {
           <header className={styles.header}>
             <div>
               <h2 className={styles.title}>
-                <span>articles</span> for pro traders
+                <span>{t("home.testimonial.titleSpan")}</span>
+                {t("home.testimonial.title")}
               </h2>
               <p className={styles.description}>
-                Hey there pro traders, check out these articles with tips to
-                take your trading game to the next level!
+                {t("home.testimonial.description")}
               </p>
             </div>
             <div className={styles.btnGroup}>
@@ -74,7 +73,7 @@ const TestimonialSection = () => {
           </Swiper>
           <div className="text-center">
             <Link to="about/team" className={styles.btnMore}>
-              view more
+              {t("home.testimonial.btnMore")}
             </Link>
           </div>
         </div>

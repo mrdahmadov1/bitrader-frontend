@@ -193,6 +193,35 @@
         }
       },
       "btnMore": "daha çox göstər"
+    },
+    "testimonial": {
+      "title": " üçün məqalələr",
+      "titleSpan": "peşəkar tacirlər",
+      "description": "Salam, peşəkar tacirlər, ticarət oyununuza bir addım yaxınlaşdırmaq üçün məsləhətlərlə dolu bu məqalələri yoxlayın!",
+      "slides": {
+        "trading market": {
+          "meta": "ticarət bazarı",
+          "title": "hedge fondları necə İşləyir?",
+          "description": "Xüsusi ticarət strategiyanıza əsasən müxtəlif sifariş növləri təklif edirik.",
+          "author": "abhivibha kanmani",
+          "date": "20/05/2024"
+        },
+        "investment": {
+          "meta": "investisiya",
+          "title": "opsiyon ticarəti biznesi?",
+          "description": "Təhlükəsizlik bizim əsas prioritetimizdir və sərmayələrinizin təhlükəsizliyini təmin etmək üçün möhkəm tədbirlər görürük.",
+          "author": "hulya aydin",
+          "date": "12/07/2024"
+        },
+        "forex trading": {
+          "meta": "forex ticarəti",
+          "title": "swing ticarəti",
+          "description": "Platformumuz sadəcə ticarətdən ibarət deyil, həmçinin bilik və öyrənmə mərkəzi kimi fəaliyyət göstərir. Resurslar təmin edirik.",
+          "author": "vasha gueye",
+          "date": "20/06/2024"
+        }
+      },
+      "btnMore": "daha çox"
     }
   }
 }
