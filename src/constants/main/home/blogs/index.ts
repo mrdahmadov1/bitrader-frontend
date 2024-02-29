@@ -1,9 +1,9 @@
-import thumbImg1 from "../../../../components/main/home/testimonial/assets/images/thumb-1.png";
-import authorThumbImg1 from "../../../../components/main/home/testimonial/assets/images/author-1.png";
-import thumbImg2 from "../../../../components/main/home/testimonial/assets/images/thumb-2.png";
-import authorThumbImg2 from "../../../../components/main/home/testimonial/assets/images/author-2.png";
-import thumbImg3 from "../../../../components/main/home/testimonial/assets/images/thumb-3.png";
-import authorThumbImg3 from "../../../../components/main/home/testimonial/assets/images/author-3.png";
+import thumbImg1 from "../../../../components/main/home/blogs/assets/images/thumb-1.png";
+import authorThumbImg1 from "../../../../components/main/home/blogs/assets/images/author-1.png";
+import thumbImg2 from "../../../../components/main/home/blogs/assets/images/thumb-2.png";
+import authorThumbImg2 from "../../../../components/main/home/blogs/assets/images/author-2.png";
+import thumbImg3 from "../../../../components/main/home/blogs/assets/images/thumb-3.png";
+import authorThumbImg3 from "../../../../components/main/home/blogs/assets/images/author-3.png";
 
 export const slides = [
   {

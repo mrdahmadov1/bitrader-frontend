@@ -1,9 +1,10 @@
 import { useTranslation } from "react-i18next";
-import { ItemProps } from "../../../../../models/IBlogItem";
+import { ItemProps } from "../../../../../models/ITestimonialItem";
 import CommonAnimation from "../../../../common/commonAnimation";
 import styles from "./assets/css/styles.module.css";
+import quoteIcon from "./assets/images/quote-icon.svg";
 
-const BlogItem: React.FC<ItemProps> = ({ item }) => {
+const TestimonialItem: React.FC<ItemProps> = ({ item }) => {
   const { t } = useTranslation();
   const variants = {
     hidden: { opacity: 0, y: 100 },
@@ -13,26 +14,24 @@ const BlogItem: React.FC<ItemProps> = ({ item }) => {
   return (
     <>
       <CommonAnimation variants={variants} className={styles.item}>
-        <div className={styles.thumb}>
-          <img src={item.thumbImg} alt="blog thumb image" />
-        </div>
         <div className={styles.content}>
-          <div className={styles.meta}>
-            <span>{t(`home.testimonial.slides.${item.meta}.meta`)}</span>
-          </div>
-          <h5 className={styles.title}>
-            {t(`home.testimonial.slides.${item.meta}.title`)}
-          </h5>
           <p className={styles.description}>
-            {t(`home.testimonial.slides.${item.meta}.description`)}
+            {t(`home.testimonial.slides.${item.author}.description`)}
           </p>
-          <div className={styles.author}>
-            <div className={styles.authorThumb}>
-              <img src={item.authorThumbImg} alt="author thumb image" />
+          <div className="d-flex align-items-center justify-content-between">
+            <div className={styles.author}>
+              <div className={styles.authorThumb}>
+                <img src={item.authorThumbImg} alt="author thumb image" />
+              </div>
+              <div className={styles.authorContent}>
+                <h6>{t(`home.testimonial.slides.${item.author}.author`)}</h6>
+                <span className="text-capitalize">
+                  {t(`home.testimonial.slides.${item.author}.title`)}
+                </span>
+              </div>
             </div>
-            <div className={styles.authorContent}>
-              <h6>{t(`home.testimonial.slides.${item.meta}.author`)}</h6>
-              <span>{t(`home.testimonial.slides.${item.meta}.date`)}</span>
+            <div className={styles.quoteIcon}>
+              <img src={quoteIcon} alt="quote icon" />
             </div>
           </div>
         </div>
@@ -41,4 +40,4 @@ const BlogItem: React.FC<ItemProps> = ({ item }) => {
   );
 };
 
-export default BlogItem;
+export default TestimonialItem;

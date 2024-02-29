@@ -1,16 +1,15 @@
 import { Link } from "react-router-dom";
 import styles from "./assets/css/styles.module.css";
-import TestimonialItem from "./testimonialItem";
+import BlogItem from "./blogItem";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import { useRef, useState } from "react";
-import { slides } from "../../../../constants/main/home/testimonials";
+import { slides } from "../../../../constants/main/home/blogs";
 import { useTranslation } from "react-i18next";
-import { Item } from "../../../../models/ITestimonialItem";
 
-const TestimonialSection = () => {
+const BlogSection = () => {
   const { t } = useTranslation();
 
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -20,7 +19,7 @@ const TestimonialSection = () => {
 
   return (
     <>
-      <div className={styles.testimonial}>
+      <div className={styles.blogs}>
         <div className={`container ${styles.container}`}>
           <div className={styles.shape1}>
             <span></span>
@@ -28,11 +27,11 @@ const TestimonialSection = () => {
           <header className={styles.header}>
             <div>
               <h2 className={styles.title}>
-                {t("home.testimonial.title")}
-                <span>{t("home.testimonial.titleSpan")}</span>
+                <span>{t("home.blogs.titleSpan")}</span>
+                {t("home.blogs.title")}
               </h2>
               <p className={styles.description}>
-                {t("home.testimonial.description")}
+                {t("home.blogs.description")}
               </p>
             </div>
             <div className={styles.btnGroup}>
@@ -60,21 +59,21 @@ const TestimonialSection = () => {
             breakpoints={{
               320: { slidesPerView: 1 },
               768: { slidesPerView: 2 },
-              1200: { slidesPerView: 3 },
+              992: { slidesPerView: 3 },
             }}
             speed={1000}
             grabCursor={true}
             modules={[Autoplay, Navigation]}
           >
-            {slides.map((slide: Item) => (
+            {slides.map((slide) => (
               <SwiperSlide key={slide.id}>
-                <TestimonialItem item={slide} />
+                <BlogItem item={slide} />
               </SwiperSlide>
             ))}
           </Swiper>
           <div className="text-center">
             <Link to="about/team" className={styles.btnMore}>
-              {t("home.testimonial.btnMore")}
+              {t("home.blogs.btnMore")}
             </Link>
           </div>
         </div>
@@ -83,4 +82,4 @@ const TestimonialSection = () => {
   );
 };
 
-export default TestimonialSection;
+export default BlogSection;

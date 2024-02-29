@@ -194,7 +194,7 @@
       },
       "btnMore": "daha çox göstər"
     },
-    "testimonial": {
+    "blogs": {
       "title": " üçün məqalələr",
       "titleSpan": "peşəkar tacirlər",
       "description": "Salam, peşəkar tacirlər, ticarət oyununuza bir addım yaxınlaşdırmaq üçün məsləhətlərlə dolu bu məqalələri yoxlayın!",
@@ -222,6 +222,29 @@
         }
       },
       "btnMore": "daha çox"
+    },
+    "testimonial": {
+      "title": "Bizimlə əlaqə saxlayın ",
+      "titleSpan": "müştərilərimiz",
+      "description": "Müştərilərimizlə əlaqə qurmaqdan, onların təcrübələrini və xidmətlərimizi necə inkişaf etdirə biləcəyimiz barədə məlumat almaqdan məmnunluq duyuruq.",
+      "slides": {
+        "guy hawkins": {
+          "title": "Ticarət ustası",
+          "description": "Yuxarıdakı rəydə Janine adlı bir müştəri Briogeo məhsulları ilə təcrübəsini bölüşür. Postda çox sayda məhsul adı çəkilməsinə baxmayaraq, yazarın hekayəsini danışmasına imkan verərək öz yerindən tam istifadə edir...",
+          "author": "Guy Hawkins"
+        },
+        "belal hossain": {
+          "title": "Ticarət dahisi",
+          "description": "Yuxarıdakı rəy bir yayda özünə proqramlaşdırma öyrənən Martha Chumo haqqındadır. Bu rəy nümunəsi işləyir, çünki potensial müştərilərə özünü Codeacademy-nin mövcud müştəri bazasında görməyə imkan verir.",
+          "author": "Belal Hossain"
+        },
+        "mobarok hossain": {
+          "title": "Ticarət ustası",
+          "description": "Yuxarıdakı rəy bir yayda özünə proqramlaşdırma öyrənən Martha Chumo haqqındadır. Bu rəy nümunəsi işləyir, çünki potensial müştərilərə özünü Codeacademy-nin mövcud müştəri bazasında görməyə imkan verir.",
+          "author": "Mobarok Hossain"
+        }
+      },
+      "btnMore": "Ətraflı"
     }
   }
 }

@@ -10,6 +10,7 @@ import RoadmapSection from "./roadmap";
 import PricingSection from "./pricing";
 import TeamSection from "./team";
 import TestimonialSection from "./testimonial";
+import BlogSection from "./blogs";
 
 const HomeContainer = () => {
   return (
@@ -26,6 +27,7 @@ const HomeContainer = () => {
         <RoadmapSection />
         <PricingSection />
         <TeamSection />
+        <BlogSection />
         <TestimonialSection />
       </div>
     </>

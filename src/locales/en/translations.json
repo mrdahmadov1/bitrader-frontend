@@ -194,7 +194,7 @@
       },
       "btnMore": "view more"
     },
-    "testimonial": {
+    "blogs": {
       "title": "for pro traders",
       "titleSpan": "articles ",
       "description": "Hey there pro traders, check out these articles with tips to take your trading game to the next level!",
@@ -219,6 +219,29 @@
           "description": "Our platform is not only about trading—it's also a hub for knowledge and learning. We provide resources. Our platform is not only about trading—it's also a hub for knowledge and learning. We provide resources.",
           "author": "vasha gueye",
           "date": "20/06/2024"
+        }
+      },
+      "btnMore": "view more"
+    },
+    "testimonial": {
+      "title": "connect with ",
+      "titleSpan": "our clients",
+      "description": "We love connecting with our clients to hear about their experiences and how we can improve.",
+      "slides": {
+        "guy hawkins": {
+          "title": "trade boss",
+          "description": "In the above testimonial, a customer named Jeanine shares her experience with Briogeo’s products. While the post is scattered with too many product mentions, it takes full advantage of its real estate by allowing the writer to tell",
+          "author": "guy hawkins"
+        },
+        "belal hossain": {
+          "title": "trade genius",
+          "description": "The above testimonial is about Martha Chumo, who taught herself to code in one summer. This testimonial example works because it allows prospective customers to see themselves in Codeacademy’s current customer base.",
+          "author": "belal hossain"
+        },
+        "mobarok hossain": {
+          "title": "trade master",
+          "description": "The above testimonial is about Martha Chumo, who taught herself to code in one summer. This testimonial example works because it allows prospective customers to see themselves in Codeacademy’s current customer base.",
+          "author": "mobarok hossain"
         }
       },
       "btnMore": "view more"
