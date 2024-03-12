@@ -245,6 +245,37 @@
         }
       },
       "btnMore": "view more"
+    },
+    "faq": {
+      "title": "asked questions",
+      "titleSpan": "frequently ",
+      "description": "Hey there! Got questions? We've got answers. Check out our FAQ page for all the deets. Still not satisfied? Hit us up.",
+      "faqList": {
+        "question1": {
+          "title": "what does this tool do?",
+          "description": "Online trading’s primary advantages are that it allows you to manage your trades at your convenience."
+        },
+        "question2": {
+          "title": "what are the disadvantages of online trading?",
+          "description": "You don’t need to worry, the interface is user-friendly. Anyone can use it smoothly. Our user manual will help you to solve your problem."
+        },
+        "question3": {
+          "title": "is online trading safe?",
+          "description": " Online trading’s primary advantages are that it allows you to manage your trades at your convenience."
+        },
+        "question4": {
+          "title": "what is online trading and how does it work?",
+          "description": " Online trading’s primary advantages are that it allows you to manage your trades at your convenience."
+        },
+        "question5": {
+          "title": "which app is best for online trading?",
+          "description": " Online trading’s primary advantages are that it allows you to manage your trades at your convenience."
+        },
+        "question6": {
+          "title": "how to create a trading account?",
+          "description": " Online trading’s primary advantages are that it allows you to manage your trades at your convenience."
+        }
+      }
     }
   }
 }

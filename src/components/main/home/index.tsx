@@ -11,6 +11,7 @@ import PricingSection from "./pricing";
 import TeamSection from "./team";
 import TestimonialSection from "./testimonial";
 import BlogSection from "./blogs";
+import FAQSection from "./faq";
 
 const HomeContainer = () => {
   return (
@@ -29,6 +30,7 @@ const HomeContainer = () => {
         <TeamSection />
         <BlogSection />
         <TestimonialSection />
+        <FAQSection />
       </div>
     </>
   );

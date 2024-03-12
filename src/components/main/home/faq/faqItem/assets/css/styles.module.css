@@ -1,0 +1,45 @@
+.item {
+  padding: 20px 0 0;
+  border-bottom: 1px solid var(--border-color);
+  cursor: pointer;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--title-color);
+  padding-bottom: 5px;
+  text-transform: capitalize;
+  font-family: 'Anek Telugu';
+  font-weight: 500;
+  font-size: 1.25rem;
+  transition: color 0.5s ease;
+}
+
+.item.active .title {
+  color: var(--brand-color);
+}
+
+.item .title i::before {
+  -webkit-text-stroke: 1px var(--title-color);
+  font-size: 1rem;
+  transition: all 0.5s ease;
+}
+
+.item.active .title i::before {
+  transition: rotate 0.5s ease;
+  -webkit-text-stroke: 1px var(--brand-color);
+  rotate: 180deg;
+}
+
+.description {
+  max-height: 0;
+  margin-bottom: 15px;
+  overflow: hidden;
+  transition: max-height .5s ease-in-out;
+}
+
+.item.active .description {
+  max-height: 200px;
+}

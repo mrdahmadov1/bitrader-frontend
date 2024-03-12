@@ -245,6 +245,37 @@
         }
       },
       "btnMore": "Ətraflı"
+    },
+    "faq": {
+      "title": "sual verilmiş suallar",
+      "titleSpan": "tez-tez ",
+      "description": "Salam! Suallarınız varsa, cavabları bizdə var. Bütün detallar üçün FAQ səhifəmizi yoxlayın. Hələ də razılaşmamısınızsa, bizimlə əlaqə saxlayın.",
+      "faqList": {
+        "question1": {
+          "title": "bu nə işə yarayır?",
+          "description": "Onlayn ticarətin əsas üstünlükləri, əməkdaşlıqlarınızı öz rahatlığınıza görə idarə etməyə imkan verir."
+        },
+        "question2": {
+          "title": "onlayn ticarətin dezavantajları nələrdir?",
+          "description": "Narahat olmağınıza ehtiyac yoxdur, interfeys istifadəçi dostudur. Hər kəs onu asanlıqla istifadə edə bilər. İstifadəçi təlimatımız sizi probleminizi həll etməyə kömək edəcəkdir."
+        },
+        "question3": {
+          "title": "onlayn ticarət təhlükəsizdir?",
+          "description": "Onlayn ticarətin əsas üstünlükləri, əməkdaşlıqlarınızı öz rahatlığınıza görə idarə etməyə imkan verir."
+        },
+        "question4": {
+          "title": "onlayn ticarət nədir və necə işləyir?",
+          "description": "Onlayn ticarətin əsas üstünlükləri, əməkdaşlıqlarınızı öz rahatlığınıza görə idarə etməyə imkan verir."
+        },
+        "question5": {
+          "title": "onlayn ticarət üçün ən yaxşı proqram hansıdır?",
+          "description": "Onlayn ticarətin əsas üstünlükləri, əməkdaşlıqlarınızı öz rahatlığınıza görə idarə etməyə imkan verir."
+        },
+        "question6": {
+          "title": "ticarət hesabı necə yaradılır?",
+          "description": "Onlayn ticarətin əsas üstünlükləri, əməkdaşlıqlarınızı öz rahatlığınıza görə idarə etməyə imkan verir."
+        }
+      }
     }
   }
 }
