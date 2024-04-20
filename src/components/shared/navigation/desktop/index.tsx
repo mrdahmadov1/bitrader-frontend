@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import styles from "./assets/css/styles.module.css";
-import { INavItem } from "../../../../models/INavItem";
-import { mainNavItems } from "../../../../constants/shared/navigation";
+import { INavItem } from "@/models/INavItem";
+import { mainNavItems } from "@/constants/shared/navigation";
 import { useTranslation } from "react-i18next";
 
 const DesktopNavigation = () => {

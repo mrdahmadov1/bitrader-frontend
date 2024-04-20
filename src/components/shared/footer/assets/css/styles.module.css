@@ -1,0 +1,155 @@
+.footer {
+  background-color: #00150F;
+  color: var(--wh-color);
+  font-weight: 400;
+  position: relative;
+  overflow: hidden;
+  padding: 80px 0 0;
+}
+
+.shape1 {
+  position: absolute;
+  height: 95%;
+  width: 920px;
+  border: 1px solid var(--bg-white);
+  opacity: 0.06;
+  padding: 40px;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  top: 0%;
+  left: -3%;
+  transform: rotate(13deg);
+  display: none;
+  z-index: 999;
+}
+
+.shape1 span {
+  position: absolute;
+  content: "";
+  height: 90%;
+  width: 900px;
+  background: linear-gradient(150.39deg, rgba(237, 242, 248, 0.22) 15.02%, #EDF2F8 99.59%);
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  top: 5%;
+  left: -1%;
+  z-index: -999;
+}
+
+.logo {
+  margin-bottom: 20px;
+}
+
+.description {
+  color: var(--text-color);
+  margin-bottom: 30px;
+  font-weight: 500;
+  max-inline-size: 40ch;
+}
+
+.apps {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.appApple,
+.appPlaystore {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 10px 10px;
+  border-radius: 8px;
+  z-index: 1000;
+}
+
+.appApple {
+  background-color: var(--brand-color);
+  color: #0C263A;
+}
+
+.appPlaystore {
+  background-color: #124D6D;
+  color: var(--bg-white);
+}
+
+.appContent {
+  text-transform: capitalize;
+}
+
+.appContent span {
+  font-size: 0.5rem;
+  line-height: 1.1;
+}
+
+.appContent p {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+
+.links li h6 {
+  color: var(--bg-white);
+  margin-bottom: 20px;
+}
+
+.links li a {
+  color: var(--text-color);
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.socialLinks {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 10px;
+  padding: 25px 0;
+  margin-top: 80px;
+}
+
+.socialLink a {
+  font-size: 15px;
+  background-color: transparent;
+  color: var(--bg-white);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  border-radius: 20px;
+  transition: all 0.5s ease;
+}
+
+.socialLink a:hover {
+  background-color: var(--brand-color);
+  border-color: var(--brand-color);
+}
+
+@media all and (min-width:768px) {
+  .shape1 {
+    display: block;
+    width: 530px;
+    top: 0;
+    left: -19%;
+  }
+
+  .shape1 span {
+    top: 5%;
+    left: -77%;
+  }
+}
+
+@media all and (min-width:992px) {
+  .shape1 {
+    top: 4%;
+    left: -13%;
+  }
+}
+
+@media all and (min-width:1200px) {
+  .shape1 {
+    height: 100%;
+    top: 9%;
+    left: -6%;
+  }
+}

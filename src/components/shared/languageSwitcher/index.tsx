@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import i18n from "../../../utils/i18n";
+import i18n from "@/utils/i18n";
 import styles from "./assets/css/styles.module.css";
 import en from "./assets/images/en.png";
 import az from "./assets/images/az.png";

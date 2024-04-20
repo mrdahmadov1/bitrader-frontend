@@ -1,4 +1,4 @@
-import HomeContainer from "../../../components/main/home";
+import HomeContainer from "@/containers/home";
 
 const Home = () => {
   return (

@@ -1,5 +1,11 @@
+import TeamContainer from "@/containers/team";
+
 const Team = () => {
-  return <div>Team</div>;
+  return (
+    <>
+      <TeamContainer />
+    </>
+  );
 };
 
 export default Team;

@@ -14,6 +14,30 @@
         "team": "komandamız",
         "price": "qiymət"
       }
+    },
+    "footer": {
+      "description": "Bizim ticarət saytımıza xoş gəlmisiniz! Biz ətrafımızda ən yaxşı, ən münasib məhsulları və xidmətləri təklif edirik. Indi alış-veriş edin və böyük aksiyalar tapmaga başlayın!",
+      "quick links": {
+        "title": "Bağlantılar",
+        "about us": "Haqqımızda",
+        "teams": "Komandamız",
+        "services": "Xidmətlər",
+        "features": "Xüsusiyyətlər"
+      },
+      "support": {
+        "title": "Dəstək",
+        "terms & conditions": "Şərtlər və Qaydalar",
+        "privacy policy": "Gizlilik Siyasəti",
+        "FAQ": "Tez-tez Soruşulan Suallar",
+        "support center": "Dəstək Mərkəzi"
+      },
+      "company": {
+        "title": "Şirkət",
+        "careers": "Karyera",
+        "updates": "Yeniliklər",
+        "jobs": "Vakansiyalar",
+        "announce": "Elanlar"
+      }
     }
   },
   "home": {
@@ -276,6 +300,13 @@
           "description": "Onlayn ticarətin əsas üstünlükləri, əməkdaşlıqlarınızı öz rahatlığınıza görə idarə etməyə imkan verir."
         }
       }
+    },
+    "newsletter": {
+      "title": "abunə olun",
+      "titleSpan": "xəbərlərə ",
+      "description": "Yeniliklərimizi qaçırmaqdan yorulmusunuz? İndi xəbərlərimizə abunə olun və xəbərlərdən xəbərdar olun!",
+      "inputPlaceholder": "email ",
+      "btnSubmit": "göndər"
     }
   }
 }

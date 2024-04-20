@@ -2,10 +2,10 @@ import moonIcon from "./assets/images/moon.svg";
 import sunIcon from "./assets/images/sun.svg";
 import styles from "./assets/css/styles.module.css";
 import { useDispatch, useSelector } from "react-redux";
-import { toggleTheme } from "../../../store/theme/themeSlice";
-import { RootState, AppDispatch } from "../../../store/configureStore";
+import { toggleTheme } from "@/store/theme/themeSlice";
+import { RootState, AppDispatch } from "@/store/configureStore";
 import { useEffect } from "react";
-import { updateThemeVariables } from "../../../helpers/updateThemeVariables";
+import { updateThemeVariables } from "@/helpers/updateThemeVariables";
 
 const ThemeSwitcher = () => {
   const dispatch = useDispatch<AppDispatch>();

@@ -14,6 +14,31 @@
         "team": "team",
         "price": "price"
       }
+    },
+    "footer": {
+      "description": "Welcome to our trading site! We offer the best, most affordable products and services around. Shop now and start finding great deals!",
+      "quick links": {
+        "title": "Quick Links",
+        "about us": "About Us",
+        "teams": "Teams",
+        "services": "Services",
+        "features": "Features"
+      },
+
+      "support": {
+        "title": "Support",
+        "terms & conditions": "Terms & Conditions",
+        "privacy policy": "Privacy Policy",
+        "FAQ": "FAQ",
+        "support center": "Support Center"
+      },
+      "company": {
+        "title": "Company",
+        "careers": "Careers",
+        "updates": "Updates",
+        "jobs": "Jobs",
+        "announce": "Announce"
+      }
     }
   },
   "home": {
@@ -276,6 +301,13 @@
           "description": " Online trading’s primary advantages are that it allows you to manage your trades at your convenience."
         }
       }
+    },
+    "newsletter": {
+      "title": "our news",
+      "titleSpan": "subscribe ",
+      "description": "Hey! Are you tired of missing out on our updates? Subscribe to our news now and stay in the loop!",
+      "inputPlaceholder": "email address",
+      "btnSubmit": "submit"
     }
   }
 }

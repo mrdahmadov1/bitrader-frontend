@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import pages from "./pages";
-import { IRoute } from "../models/IRoute";
+import { IRoute } from "@/models/IRoute";
 
 const renderRoutes = (routes: IRoute[]) => {
   return routes.map(({ path, title, element, children = [] }) => {

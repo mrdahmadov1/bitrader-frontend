@@ -1,14 +1,14 @@
 import React, { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { CommonAnimationProps } from "../../../models/ICommonAnimationProps";
+import { CommonAnimationProps } from "@/models/ICommonAnimationProps";
 
 const CommonAnimation: React.FC<CommonAnimationProps> = ({
   variants,
   className,
   children,
 }) => {
-  const [ref, inView] = useInView({ triggerOnce: false });
+  const [ref, inView] = useInView({ triggerOnce: true });
   const controls = useAnimation();
 
   useEffect(() => {

@@ -1,5 +1,5 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
-import { updateThemeVariables } from "../../helpers/updateThemeVariables";
+import { updateThemeVariables } from "@/helpers/updateThemeVariables";
 
 const setLocalStorageTheme = (newTheme: string) => {
   localStorage.setItem("currentTheme", newTheme);

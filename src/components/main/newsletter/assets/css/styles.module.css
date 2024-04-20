@@ -1,0 +1,319 @@
+@keyframes floating {
+  0% {
+    transform: translateY(30px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.newsletter {
+  background: linear-gradient(152deg, var(--bg-trans-color) 0%, var(--bg-color) 100%);
+  padding: 80px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.shape1 {
+  position: absolute;
+  width: auto;
+  top: 6%;
+  left: 6%;
+  animation: rotate 3s cubic-bezier(0.41, 0.15, 0.64, 0.86) infinite alternate;
+}
+
+.shape1 img {
+  width: 32px;
+  max-width: 100%;
+  height: auto;
+}
+
+
+.shape2 {
+  position: absolute;
+  width: auto;
+  bottom: 6%;
+  right: 6%;
+  animation: floating 3s cubic-bezier(0.41, 0.15, 0.64, 0.86) infinite alternate;
+}
+
+.shape2 img {
+  width: 40px;
+  max-width: 100%;
+  height: auto;
+}
+
+.shape3 {
+  display: none;
+}
+
+.content {
+  background-color: var(--brand-color);
+  border-radius: 24px;
+  padding: 45px 30px;
+  margin: auto;
+}
+
+.thumb {
+  width: 32%;
+  margin: 0 auto 20px;
+  filter: drop-shadow(-2px 3px 10px rgba(0, 0, 0, 0.5));
+
+}
+
+.thumb img {
+  width: 100%;
+  height: auto;
+}
+
+.header {
+  margin: 0 auto 48px auto;
+  max-inline-size: 65ch;
+  text-align: center;
+}
+
+.title {
+  text-transform: capitalize;
+  color: #0C263A;
+}
+
+.title span {
+  color: #0A4FD5;
+}
+
+.description {
+  color: #0C263A;
+}
+
+.formInner {
+  text-align: center;
+}
+
+.input {
+  width: 100%;
+  background-color: var(--bg-white);
+  border: 1px solid var(--bg-white);
+  color: #0C263A;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  font-size: 1rem;
+  line-height: 1.5;
+  text-transform: capitalize;
+}
+
+.btnSubmit {
+  cursor: pointer;
+  background-color: #0A4FD5;
+  border: 1px solid #0A4FD5;
+  color: var(--bg-white);
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  line-height: 1;
+  text-transform: capitalize;
+  font-weight: 600;
+  border-radius: 8px;
+}
+
+@media all and (min-width:576px) {
+  .content {
+    width: 85%;
+  }
+
+  .shape1 {
+    top: 3%;
+    left: 7%;
+  }
+
+  .shape2 {
+    bottom: 3%;
+    right: 7%;
+  }
+
+  .formInner {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .input {
+    max-width: 60%;
+    margin-bottom: 0;
+  }
+}
+
+@media all and (min-width:768px) {
+  .shape1 {
+    left: 2%;
+    left: 1%;
+  }
+
+  .shape1 img {
+    width: 84px;
+  }
+
+  .shape2 {
+    bottom: 2%;
+    right: 1%;
+  }
+
+  .shape2 img {
+    width: 84px;
+  }
+
+  .shape3 {
+    position: absolute;
+    display: block;
+    top: -5%;
+    left: 15%;
+    width: 65%;
+    z-index: -999;
+  }
+
+  .shape3 img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .content {
+    width: 80%;
+    padding: 30px 40px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+
+
+  .thumb {
+    margin: 0;
+    flex-basis: 60%;
+  }
+
+  .header {
+    margin-bottom: 0;
+  }
+
+
+  .description {
+    margin-bottom: 15px;
+  }
+
+  .header,
+  .formInner {
+    text-align: left;
+  }
+
+  .formInner {
+    justify-content: start;
+  }
+
+}
+
+@media all and (min-width:768px) and (max-width:991px) {
+  .title {
+    font-size: calc(1.325rem + 0.7714285714vw);
+    line-height: 36px;
+  }
+
+}
+
+@media all and (min-width:992px) {
+  .newsletter {
+    padding: 120px 0;
+  }
+
+  .shape1 {
+    top: 4%;
+    left: 4%;
+  }
+
+  .shape2 {
+    bottom: 4%;
+    right: 4%;
+  }
+
+  .shape3 {
+    top: 0;
+    left: 15%;
+    width: auto;
+  }
+
+  .content {
+    padding: 55px;
+  }
+
+  .thumb {
+    flex-basis: 50%;
+  }
+
+  .description {
+    margin-bottom: 40px;
+  }
+
+  .input {
+    max-width: 70%;
+    padding: 16px 20px;
+  }
+
+  .btnSubmit {
+    padding: 1.25rem 1.875rem;
+  }
+}
+
+@media all and (min-width:1200px) {
+  .shape1 {
+    top: 5%;
+    left: 5%;
+  }
+
+  .shape1 img {
+    width: 100px;
+  }
+
+  .shape2 {
+    bottom: 5%;
+    right: 5%;
+  }
+
+  .shape2 img {
+    width: 100px;
+  }
+
+  .shape3 {
+    left: 25%;
+  }
+
+  .content {
+    padding: 55px 90px;
+  }
+
+
+  .thumb {
+    flex-basis: 40%;
+  }
+}
+
+@media all and (min-width:1400px) {
+  .shape1 {
+    top: 8%;
+    left: 5%;
+  }
+
+  .shape2 {
+    bottom: 8%;
+    right: 5%;
+  }
+
+
+  .thumb {
+    flex-basis: 32%;
+  }
+}

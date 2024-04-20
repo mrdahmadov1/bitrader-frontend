@@ -12,26 +12,36 @@ import Blogs from "./main/blogs";
 import BlogDetails from "./main/blogDetails";
 import Contact from "./main/contact";
 import NotFound from "./notFound";
+import MainLayout from "../layouts/mainLayout";
+import { ComponentType } from "react";
+
+const withLayout = (Component: ComponentType) => {
+  return () => (
+    <MainLayout>
+      <Component />
+    </MainLayout>
+  );
+};
 
 const pagesData = [
   {
     path: "",
-    element: <Home />,
+    element: withLayout(Home)(),
     title: "Home",
   },
   {
     path: "register",
-    element: <Register />,
+    element: withLayout(Register)(),
     title: "Sign Up",
   },
   {
     path: "login",
-    element: <Login />,
+    element: withLayout(Login)(),
     title: "Sign In",
   },
   {
     path: "reset-password",
-    element: <ResetPassword />,
+    element: withLayout(ResetPassword)(),
     title: "Reset Password",
   },
   {
@@ -40,12 +50,12 @@ const pagesData = [
     children: [
       {
         path: "",
-        element: <Services />,
+        element: withLayout(Services)(),
         title: "All Services",
       },
       {
         path: ":id",
-        element: <ServiceDetails />,
+        element: withLayout(ServiceDetails)(),
         title: "Service",
       },
     ],
@@ -56,12 +66,12 @@ const pagesData = [
     children: [
       {
         path: "",
-        element: <About />,
+        element: withLayout(About)(),
         title: "About Us",
       },
       {
         path: "price",
-        element: <Price />,
+        element: withLayout(Price)(),
         title: "Price",
       },
       {
@@ -70,12 +80,12 @@ const pagesData = [
         children: [
           {
             path: "",
-            element: <Team />,
+            element: withLayout(Team)(),
             title: "All Team",
           },
           {
             path: ":id",
-            element: <TeamDetails />,
+            element: withLayout(TeamDetails)(),
             title: "Member",
           },
         ],
@@ -88,19 +98,19 @@ const pagesData = [
     children: [
       {
         path: "",
-        element: <Blogs />,
+        element: withLayout(Blogs)(),
         title: "All Blogs",
       },
       {
         path: ":id",
-        element: <BlogDetails />,
+        element: withLayout(BlogDetails)(),
         title: "Blog",
       },
     ],
   },
   {
     path: "contact",
-    element: <Contact />,
+    element: withLayout(Contact)(),
     title: "contact",
   },
   {

@@ -1,8 +1,8 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
-import en from "../locales/en/translations.json";
-import ru from "../locales/ru/translations.json";
-import az from "../locales/az/translations.json";
+import en from "@/locales/en/translations.json";
+import ru from "@/locales/ru/translations.json";
+import az from "@/locales/az/translations.json";
 import Backend from "i18next-http-backend";
 import LanguageDetector from "i18next-browser-languagedetector";
 

@@ -1,5 +1,11 @@
+import ServicesContainer from "@/containers/services";
+
 const Services = () => {
-  return <div>Services</div>;
+  return (
+    <>
+      <ServicesContainer />
+    </>
+  );
 };
 
 export default Services;

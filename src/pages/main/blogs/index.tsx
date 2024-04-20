@@ -1,5 +1,11 @@
+import BlogsContainer from "@/containers/blogs";
+
 const Blogs = () => {
-  return <div>Blogs</div>;
+  return (
+    <>
+      <BlogsContainer />
+    </>
+  );
 };
 
 export default Blogs;
