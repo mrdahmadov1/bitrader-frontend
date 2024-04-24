@@ -18,7 +18,8 @@ const Header = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 1000) {
+      const scrollThreshold = window.innerWidth < 768 ? 100 : 200;
+      if (window.scrollY > scrollThreshold) {
         setScrolled(true);
       } else {
         setScrolled(false);
