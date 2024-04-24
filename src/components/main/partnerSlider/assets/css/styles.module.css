@@ -19,7 +19,9 @@
   border-radius: 8px;
 }
 
-.container {}
+.swiperContainer {
+  width: 100vw;
+}
 
 .slideImg {
   width: 100%;

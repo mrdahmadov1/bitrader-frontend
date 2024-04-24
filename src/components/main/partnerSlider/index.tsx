@@ -28,7 +28,7 @@ export default function PartnerSlider() {
 
   return (
     <div className={`${styles.partnerSlider}`}>
-      <div className={`container ${styles.container}`}>
+      <div className={`container ${styles.container} p-0 m-0`}>
         <Swiper
           slidesPerView={1}
           loop={true}
