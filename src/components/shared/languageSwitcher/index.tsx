@@ -3,7 +3,6 @@ import i18n from "@/utils/i18n";
 import styles from "./assets/css/styles.module.css";
 import en from "./assets/images/en.png";
 import az from "./assets/images/az.png";
-import ru from "./assets/images/ru.png";
 
 const getLocalStorageLanguage = () =>
   localStorage.getItem("selectedLanguage") || languages[0];
@@ -11,8 +10,8 @@ const getLocalStorageLanguage = () =>
 const setLocalStorageLanguage = (language: string) =>
   localStorage.setItem("selectedLanguage", language);
 
-const languages = ["en", "az", "ru"];
-const flags = [en, az, ru];
+const languages = ["en", "az"];
+const flags = [en, az];
 
 const LanguageSwitcher = () => {
   const initialLanguage = getLocalStorageLanguage();
