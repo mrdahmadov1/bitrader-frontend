@@ -4,6 +4,7 @@
   border-top: 8px solid var(--body-color);
   border-bottom: 8px solid var(--body-color);
   position: relative;
+  overflow: hidden;
 }
 
 .partnerSlider::after {
