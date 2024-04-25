@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import styles from "./assets/css/styles.module.css";
 import thumbImg from "./assets/images/thumb.png";
 import { useTranslation } from "react-i18next";
-import CountUp from "react-countup";
+// import CountUp from "react-countup";
 import CommonAnimation from "@/components/common/commonAnimation";
 
 const AboutSection = () => {
@@ -29,7 +29,8 @@ const AboutSection = () => {
             >
               <h3 className={styles.thumbTitle}>
                 <span>
-                  <CountUp enableScrollSpy={true} duration={3} end={10} />
+                  {/* <CountUp enableScrollSpy={true} duration={3} end={10} /> */}
+                  10
                 </span>
                 {t("home.about.thumbTitleTop")}
               </h3>
@@ -48,7 +49,8 @@ const AboutSection = () => {
             >
               <h3 className={styles.thumbTitle}>
                 <span>
-                  <CountUp enableScrollSpy={true} duration={1} end={25} />
+                  {/* <CountUp enableScrollSpy={true} duration={1} end={25} /> */}
+                  25
                 </span>
                 {t("home.about.thumbTitleBottom")}
               </h3>

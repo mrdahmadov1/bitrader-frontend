@@ -1,7 +1,7 @@
 import styles from "./assets/css/styles.module.css";
 import shapeImg from "./assets/images/shape.png";
 import { useTranslation } from "react-i18next";
-import CountUp from "react-countup";
+// import CountUp from "react-countup";
 import CommonAnimation from "@/components/common/commonAnimation";
 import { useState } from "react";
 import { navContent } from "@/constants/main/feature";
@@ -13,12 +13,12 @@ const FeatureSection = () => {
 
   const variants1 = {
     hidden: { opacity: 0, x: -100 },
-    visible: { opacity: 1, x: 0, transition: { duration: 0.5 } },
+    visible: { opacity: 1, x: 0, transition: { duration: 0.3 } },
   };
 
   const variants2 = {
     hidden: { opacity: 0, x: 100 },
-    visible: { opacity: 1, x: 0, transition: { duration: 0.5 } },
+    visible: { opacity: 1, x: 0, transition: { duration: 0.3 } },
   };
 
   const handleNavContent = (selectedContent: FeatureNavItem) => {
@@ -77,12 +77,12 @@ const FeatureSection = () => {
               className={styles.thumbContentBottom}
             >
               <h3 className={styles.thumbContentTitle}>
-                <CountUp
+                {/* <CountUp
                   enableScrollSpy={true}
                   duration={1}
                   end={content.loanValue}
-                />
-                M
+                /> */}
+                {content.loanValue}M
               </h3>
               <p className={styles.thumbContentDescription}>
                 {t("home.feature.thumbDescription2")}

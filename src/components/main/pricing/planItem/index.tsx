@@ -18,7 +18,7 @@ const PlanItem: React.FC<PlanItemProps> = ({ item }) => {
       x: item.isVertical ? item.variant : 0,
       y: item.isVertical ? 0 : item.variant,
     },
-    visible: { opacity: 1, x: 0, y: 0, transition: { duration: 0.5 } },
+    visible: { opacity: 1, x: 0, y: 0, transition: { duration: 0.3 } },
   };
 
   return (
