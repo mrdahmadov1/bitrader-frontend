@@ -79,7 +79,7 @@ const FeatureSection = () => {
               <h3 className={styles.thumbContentTitle}>
                 <CountUp
                   enableScrollSpy={true}
-                  duration={3}
+                  duration={1}
                   end={content.loanValue}
                 />
                 M

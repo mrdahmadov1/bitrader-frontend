@@ -10,12 +10,12 @@ const AboutSection = () => {
 
   const variants1 = {
     hidden: { opacity: 0, x: -100 },
-    visible: { opacity: 1, x: 0, transition: { duration: 0.5 } },
+    visible: { opacity: 1, x: 0, transition: { duration: 1 } },
   };
 
   const variants2 = {
     hidden: { opacity: 0, x: 100 },
-    visible: { opacity: 1, x: 0, transition: { duration: 0.5 } },
+    visible: { opacity: 1, x: 0, transition: { duration: 1 } },
   };
 
   return (
@@ -48,7 +48,7 @@ const AboutSection = () => {
             >
               <h3 className={styles.thumbTitle}>
                 <span>
-                  <CountUp enableScrollSpy={true} duration={5} end={25} />
+                  <CountUp enableScrollSpy={true} duration={1} end={25} />
                 </span>
                 {t("home.about.thumbTitleBottom")}
               </h3>
