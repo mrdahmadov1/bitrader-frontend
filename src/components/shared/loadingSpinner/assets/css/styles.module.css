@@ -23,6 +23,7 @@
   bottom: 0;
   right: 0;
   background-color: var(--body-color);
+  z-index: 10000;
 }
 
 .spinner img {
