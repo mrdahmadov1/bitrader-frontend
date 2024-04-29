@@ -7,11 +7,6 @@
   transition: all 0.3s ease-out;
 }
 
-.planItem:hover,
-.planItem.active {
-  border: 2px solid var(--brand-color);
-  box-shadow: 0px 16px 40px 0px rgba(26, 64, 137, 0.06);
-}
 
 .planTop {
   border-bottom: 1px solid var(--border-color-11);
@@ -71,10 +66,6 @@
   color: #0C263A;
 }
 
-.btnChoose:hover {
-  color: #0C263A;
-  background: var(--brand-color);
-}
 
 .planItem.active .btnChoose::after {
   position: absolute;
@@ -91,11 +82,28 @@
 }
 
 
-.planItem.active .btnChoose:hover::after {
-  left: 120%;
-}
 
-.planItem.active .btnChoose:hover,
-.btnChoose:hover {
-  transform: translateY(-2px);
+
+@media all and (min-width:768px) {
+
+  .btnChoose:hover {
+    color: #0C263A;
+    background: var(--brand-color);
+  }
+
+
+  .planItem:hover,
+  .planItem.active {
+    border: 2px solid var(--brand-color);
+    box-shadow: 0px 16px 40px 0px rgba(26, 64, 137, 0.06);
+  }
+
+  .planItem.active .btnChoose:hover::after {
+    left: 120%;
+  }
+
+  .planItem.active .btnChoose:hover,
+  .btnChoose:hover {
+    transform: translateY(-2px);
+  }
 }

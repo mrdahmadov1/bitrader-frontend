@@ -14,9 +14,6 @@
   transition: all 0.3s ease;
 }
 
-.languageSwitcherContainer:hover {
-  transform: scale(0.8);
-}
 
 
 .flag {
@@ -33,6 +30,13 @@
   .languageSwitcherContainer {
     bottom: calc(7% + 52px);
   }
+}
+
+@media all and (min-width:768px) {
+  .languageSwitcherContainer:hover {
+    transform: scale(0.8);
+  }
+
 }
 
 @media all and (min-width:992px) {

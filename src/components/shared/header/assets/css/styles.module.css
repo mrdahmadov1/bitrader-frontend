@@ -12,7 +12,6 @@
   }
 }
 
-
 .header {
   position: absolute;
   top: 0;
@@ -45,9 +44,7 @@
   transition: all 0.3s ease;
 }
 
-.scrollUp:hover {
-  transform: scale(0.8);
-}
+
 
 .container {
   padding: 15px 0;
@@ -91,13 +88,6 @@
   transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
 }
 
-.btnJoin:hover::after {
-  left: 120%;
-}
-
-.btnJoin:hover {
-  transform: translateY(-2px);
-}
 
 @media all and (min-width:576px) {
   .logo img {
@@ -107,6 +97,21 @@
   .scrollUp {
     bottom: 7%;
   }
+}
+
+@media all and (min-width:768px) {
+  .scrollUp:hover {
+    transform: scale(0.8);
+  }
+
+  .btnJoin:hover::after {
+    left: 120%;
+  }
+
+  .btnJoin:hover {
+    transform: translateY(-2px);
+  }
+
 }
 
 @media all and (min-width:992px) {

@@ -1,5 +1,11 @@
+import TeamSection from '@/components/main/team';
+
 const Register = () => {
-  return <></>;
+  return (
+    <>
+      <TeamSection />
+    </>
+  );
 };
 
 export default Register;

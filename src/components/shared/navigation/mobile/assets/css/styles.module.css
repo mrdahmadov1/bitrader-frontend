@@ -32,14 +32,6 @@
   font-size: 13px;
 }
 
-.subNavList .subNavItem:hover {
-  border-top-width: 2px;
-}
-
-.navList .navItem:hover {
-  border-top-width: 3px;
-}
-
 .navList .navItem a,
 .navList .navItem span {
   color: var(--title-color);
@@ -86,4 +78,16 @@
   .btnToggle i {
     font-size: 32px;
   }
+}
+
+@media all and (min-width:768px) {
+
+  .subNavList .subNavItem:hover {
+    border-top-width: 2px;
+  }
+
+  .navList .navItem:hover {
+    border-top-width: 3px;
+  }
+
 }

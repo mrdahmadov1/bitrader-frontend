@@ -38,10 +38,6 @@
 }
 
 
-.btnMore:hover {
-  transform: translateY(-1px);
-}
-
 .btnMore::after {
   position: absolute;
   background: var(--bg-white);
@@ -56,10 +52,7 @@
   z-index: -9999;
 }
 
-.btnMore:hover::after {
-  left: 120%;
-  transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
-}
+
 
 .custom-swiper-button-next {
   position: absolute;
@@ -85,12 +78,6 @@
   transition: all 0.5s ease;
 }
 
-.btnGroup button:hover,
-.btnGroup button.active {
-  background-color: var(--brand-color);
-  border-color: var(--brand-color);
-  color: #0c263a;
-}
 
 .btnGroup button i {
   -webkit-text-stroke: 1px;
@@ -141,6 +128,22 @@
   .btnMore {
     margin-top: 40px;
     padding: 1rem 1.25rem;
+  }
+
+  .btnMore:hover {
+    transform: translateY(-1px);
+  }
+
+  .btnMore:hover::after {
+    left: 120%;
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+  }
+
+  .btnGroup button:hover,
+  .btnGroup button.active {
+    background-color: var(--brand-color);
+    border-color: var(--brand-color);
+    color: #0c263a;
   }
 }
 

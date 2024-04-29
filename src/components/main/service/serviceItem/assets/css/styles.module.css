@@ -13,11 +13,6 @@
   transition: all 0.3s ease-out;
 }
 
-.serviceItem:hover {
-  transform: translateY(-8px) !important;
-  box-shadow: none;
-  border-color: var(--brand-color);
-}
 
 .serviceImg {
   margin: auto;
@@ -46,4 +41,11 @@
   .serviceItem {
     padding: 52px 32px;
   }
+
+  .serviceItem:hover {
+    transform: translateY(-8px) !important;
+    box-shadow: none;
+    border-color: var(--brand-color);
+  }
+
 }

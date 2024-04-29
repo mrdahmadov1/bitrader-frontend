@@ -1,9 +1,8 @@
-import { Link } from "react-router-dom";
-import styles from "./assets/css/styles.module.css";
-import checkDarkImg from "./assets/images/check-dark.svg";
-import { PlanItemProps } from "@/models/IPlanItemProps";
-import CommonAnimation from "@/components/common/commonAnimation";
-import { useTranslation } from "react-i18next";
+import { Link } from 'react-router-dom';
+import styles from './assets/css/styles.module.css';
+import { PlanItemProps } from '@/models/IPlanItemProps';
+import CommonAnimation from '@/components/common/commonAnimation';
+import { useTranslation } from 'react-i18next';
 
 const PlanItem: React.FC<PlanItemProps> = ({ item }) => {
   const { t } = useTranslation();
@@ -18,7 +17,7 @@ const PlanItem: React.FC<PlanItemProps> = ({ item }) => {
       x: item.isVertical ? item.variant : 0,
       y: item.isVertical ? 0 : item.variant,
     },
-    visible: { opacity: 1, x: 0, y: 0, transition: { duration: 0.3 } },
+    visible: { opacity: 1, x: 0, y: 0, transition: { duration: 0.5 } },
   };
 
   return (
@@ -26,14 +25,12 @@ const PlanItem: React.FC<PlanItemProps> = ({ item }) => {
       <li className="col-12 col-md-6 col-lg-4">
         <CommonAnimation
           variants={variants1}
-          className={`${styles.planItem} ${
-            item.price === 149 ? styles.active : null
-          }`}
+          className={`${styles.planItem} ${item.price === 149 ? styles.active : null}`}
         >
           <div className={styles.planTop}>
             <h6>{item.title}</h6>
             <h3>
-              ${item.price}/<span>{t("home.pricing.planTitleSpan")}</span>
+              ${item.price}/<span>{t('home.pricing.planTitleSpan')}</span>
             </h3>
           </div>
           <div className={styles.planMiddle}>
@@ -41,7 +38,12 @@ const PlanItem: React.FC<PlanItemProps> = ({ item }) => {
               {offerList.map((offer: string, index: number) => (
                 <li key={index} className={styles.offerItem}>
                   <span>
-                    <img src={checkDarkImg} alt="check dark image" />
+                    <img
+                      src={
+                        'https://thetork.com/demos/html/bitrader/assets/images/icon/check-dark.svg'
+                      }
+                      alt="check dark image"
+                    />
                   </span>
                   {offer}
                 </li>
@@ -50,7 +52,7 @@ const PlanItem: React.FC<PlanItemProps> = ({ item }) => {
           </div>
           <div className={styles.planBottom}>
             <Link to="/register" className={styles.btnChoose}>
-              {t("home.pricing.btnChoose")}
+              {t('home.pricing.btnChoose')}
             </Link>
           </div>
         </CommonAnimation>

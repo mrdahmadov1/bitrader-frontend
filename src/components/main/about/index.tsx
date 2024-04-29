@@ -1,9 +1,8 @@
-import { Link } from "react-router-dom";
-import styles from "./assets/css/styles.module.css";
-import thumbImg from "./assets/images/thumb.png";
-import { useTranslation } from "react-i18next";
+import { Link } from 'react-router-dom';
+import styles from './assets/css/styles.module.css';
+import { useTranslation } from 'react-i18next';
 // import CountUp from "react-countup";
-import CommonAnimation from "@/components/common/commonAnimation";
+import CommonAnimation from '@/components/common/commonAnimation';
 
 const AboutSection = () => {
   const { t } = useTranslation();
@@ -32,15 +31,16 @@ const AboutSection = () => {
                   {/* <CountUp enableScrollSpy={true} duration={3} end={10} /> */}
                   10
                 </span>
-                {t("home.about.thumbTitleTop")}
+                {t('home.about.thumbTitleTop')}
               </h3>
-              <p className={styles.thumbDescription}>
-                {t("home.about.thumbDescriptionTop")}
-              </p>
+              <p className={styles.thumbDescription}>{t('home.about.thumbDescriptionTop')}</p>
             </CommonAnimation>
 
             <CommonAnimation variants={variants1} className={styles.thumbImg}>
-              <img src={thumbImg} alt="thumb image" />
+              <img
+                src={`https://thetork.com/demos/html/bitrader/assets/images/about/1.png`}
+                alt="thumb image"
+              />
             </CommonAnimation>
 
             <CommonAnimation
@@ -52,25 +52,21 @@ const AboutSection = () => {
                   {/* <CountUp enableScrollSpy={true} duration={1} end={25} /> */}
                   25
                 </span>
-                {t("home.about.thumbTitleBottom")}
+                {t('home.about.thumbTitleBottom')}
               </h3>
-              <p className={styles.thumbDescription}>
-                {t("home.about.thumbDescriptionBottom")}
-              </p>
+              <p className={styles.thumbDescription}>{t('home.about.thumbDescriptionBottom')}</p>
             </CommonAnimation>
           </div>
         </div>
         <div className="col col-12 col-lg-6 overflow-x-hidden">
           <CommonAnimation variants={variants2} className={styles.content}>
             <h2 className={styles.contentTitle}>
-              <span>{t("home.about.contentTitleSpan")}</span>
-              {t("home.about.contentTitle")}
+              <span>{t('home.about.contentTitleSpan')}</span>
+              {t('home.about.contentTitle')}
             </h2>
-            <p className={styles.contentDescription}>
-              {t("home.about.contentDescription")}
-            </p>
+            <p className={styles.contentDescription}>{t('home.about.contentDescription')}</p>
             <Link to="/about" className={styles.btnMore}>
-              {t("home.about.btnMore")}
+              {t('home.about.btnMore')}
             </Link>
           </CommonAnimation>
         </div>

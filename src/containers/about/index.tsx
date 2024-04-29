@@ -1,12 +1,12 @@
-import AboutSection from "@/components/main/about";
-import RoadmapSection from "@/components/main/roadmap";
-import TeamSection from "@/components/main/team";
+import AboutSection from '@/components/main/about';
+import RoadmapSection from '@/components/main/roadmap';
+import TeamSection from '@/components/main/team';
 
 const AboutContainer = () => {
   return (
     <>
-      <AboutSection />
       <RoadmapSection />
+      <AboutSection />
       <TeamSection />
     </>
   );

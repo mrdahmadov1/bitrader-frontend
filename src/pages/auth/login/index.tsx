@@ -1,5 +1,11 @@
+import TeamSection from '@/components/main/team';
+
 const Login = () => {
-  return <></>;
+  return (
+    <>
+      <TeamSection />
+    </>
+  );
 };
 
 export default Login;

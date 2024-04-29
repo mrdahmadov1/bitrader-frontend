@@ -46,9 +46,7 @@
 }
 
 
-.btnMore:hover {
-  transform: translateY(-1px);
-}
+
 
 .btnMore::after {
   position: absolute;
@@ -64,15 +62,19 @@
   z-index: -9999;
 }
 
-.btnMore:hover::after {
-  left: 120%;
-  transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
-}
-
 @media all and (min-width:768px) {
   .btnMore {
     margin-top: 40px;
     padding: 1rem 1.25rem;
+  }
+
+  .btnMore:hover {
+    transform: translateY(-1px);
+  }
+
+  .btnMore:hover::after {
+    left: 120%;
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
   }
 }
 

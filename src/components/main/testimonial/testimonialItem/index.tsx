@@ -1,14 +1,14 @@
-import { useTranslation } from "react-i18next";
-import { ItemProps } from "@/models/ITestimonialItem";
-import CommonAnimation from "@/components/common/commonAnimation";
-import styles from "./assets/css/styles.module.css";
-import quoteIcon from "./assets/images/quote-icon.svg";
+import { useTranslation } from 'react-i18next';
+import { ItemProps } from '@/models/ITestimonialItem';
+import CommonAnimation from '@/components/common/commonAnimation';
+import styles from './assets/css/styles.module.css';
+import quoteIcon from './assets/images/quote-icon.svg';
 
 const TestimonialItem: React.FC<ItemProps> = ({ item }) => {
   const { t } = useTranslation();
   const variants = {
     hidden: { opacity: 0, y: 100 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.3 } },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
   };
 
   return (

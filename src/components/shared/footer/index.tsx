@@ -1,12 +1,9 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import styles from "./assets/css/styles.module.css";
-import logo from "@/assets/images/logo-light.png";
-import applestoreicon from "./assets/images/apple.png";
-import playstoreicon from "./assets/images/play.png";
-import { useTranslation } from "react-i18next";
-import { linkSections, socialLinks } from "@/constants/shared/footer";
-import { LinkItem } from "@/models/IFooterNav";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import styles from './assets/css/styles.module.css';
+import { useTranslation } from 'react-i18next';
+import { linkSections, socialLinks } from '@/constants/shared/footer';
+import { LinkItem } from '@/models/IFooterNav';
 
 const Footer: React.FC = () => {
   const { t } = useTranslation();
@@ -26,31 +23,32 @@ const Footer: React.FC = () => {
       <div className="container">
         <div className={`row p-0 gy-5 gx-4 ${styles.content}`}>
           <header className={`col-md-6 ${styles.header}`}>
-            <Link to={"/"} className={styles.logo}>
-              <img src={logo} alt="logo" />
+            <Link to={'/'} className={styles.logo}>
+              <img
+                src={'https://thetork.com/demos/html/bitrader/assets/images/logo/logo-dark.png'}
+                alt="logo"
+              />
             </Link>
-            <p className={styles.description}>
-              {t(`shared.footer.description`)}
-            </p>
+            <p className={styles.description}>{t(`shared.footer.description`)}</p>
             <div className={styles.apps}>
-              <Link
-                to={"https://www.apple.com/app-store"}
-                className={styles.appApple}
-              >
+              <Link to={'https://www.apple.com/app-store'} className={styles.appApple}>
                 <div className={styles.thumb}>
-                  <img src={applestoreicon} alt="apple icon" />
+                  <img
+                    src={'https://thetork.com/demos/html/bitrader/assets/images/footer/apple.png'}
+                    alt="apple icon"
+                  />
                 </div>
                 <div className={styles.appContent}>
                   <span>download on the</span>
                   <p>app store</p>
                 </div>
               </Link>
-              <Link
-                to={"https://play.google.com"}
-                className={styles.appPlaystore}
-              >
+              <Link to={'https://play.google.com'} className={styles.appPlaystore}>
                 <div className={styles.thumb}>
-                  <img src={playstoreicon} alt="playstore icon" />
+                  <img
+                    src={'https://thetork.com/demos/html/bitrader/assets/images/footer/play.png'}
+                    alt="playstore icon"
+                  />
                 </div>
                 <div className={styles.appContent}>
                   <span>get it on</span>

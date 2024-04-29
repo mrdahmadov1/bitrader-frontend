@@ -94,6 +94,7 @@
   background-color: var(--floating-content-bg-color-2);
   box-shadow: -40px 40px 60px 0px rgba(5, 30, 54, 0.05);
   backdrop-filter: blur(24px);
+  z-index: 2;
 }
 
 .thumbContentTop {

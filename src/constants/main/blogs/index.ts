@@ -1,45 +1,38 @@
-import thumbImg1 from "@/components/main/blogs/assets/images/thumb-1.png";
-import authorThumbImg1 from "@/components/main/blogs/assets/images/author-1.png";
-import thumbImg2 from "@/components/main/blogs/assets/images/thumb-2.png";
-import authorThumbImg2 from "@/components/main/blogs/assets/images/author-2.png";
-import thumbImg3 from "@/components/main/blogs/assets/images/thumb-3.png";
-import authorThumbImg3 from "@/components/main/blogs/assets/images/author-3.png";
-
 export const slides = [
   {
     id: 1,
-    thumbImg: thumbImg1,
-    meta: "forex trading",
-    authorThumbImg: authorThumbImg1,
+    thumbImg: 'https://thetork.com/demos/html/bitrader/assets/images/blog/1.png',
+    meta: 'forex trading',
+    authorThumbImg: 'https://thetork.com/demos/html/bitrader/assets/images/blog/author/1.png',
   },
   {
     id: 2,
-    thumbImg: thumbImg2,
-    meta: "trading market",
-    authorThumbImg: authorThumbImg2,
+    thumbImg: 'https://thetork.com/demos/html/bitrader/assets/images/blog/2.png',
+    meta: 'trading market',
+    authorThumbImg: 'https://thetork.com/demos/html/bitrader/assets/images/blog/author/2.png',
   },
   {
     id: 3,
-    thumbImg: thumbImg3,
-    meta: "investment",
-    authorThumbImg: authorThumbImg3,
+    thumbImg: 'https://thetork.com/demos/html/bitrader/assets/images/blog/3.png',
+    meta: 'investment',
+    authorThumbImg: 'https://thetork.com/demos/html/bitrader/assets/images/blog/author/3.png',
   },
   {
     id: 4,
-    thumbImg: thumbImg1,
-    meta: "forex trading",
-    authorThumbImg: authorThumbImg1,
+    thumbImg: 'https://thetork.com/demos/html/bitrader/assets/images/blog/1.png',
+    meta: 'forex trading',
+    authorThumbImg: 'https://thetork.com/demos/html/bitrader/assets/images/blog/author/1.png',
   },
   {
     id: 5,
-    thumbImg: thumbImg2,
-    meta: "trading market",
-    authorThumbImg: authorThumbImg2,
+    thumbImg: 'https://thetork.com/demos/html/bitrader/assets/images/blog/2.png',
+    meta: 'trading market',
+    authorThumbImg: 'https://thetork.com/demos/html/bitrader/assets/images/blog/author/2.png',
   },
   {
     id: 6,
-    thumbImg: thumbImg3,
-    meta: "investment",
-    authorThumbImg: authorThumbImg3,
+    thumbImg: 'https://thetork.com/demos/html/bitrader/assets/images/blog/3.png',
+    meta: 'investment',
+    authorThumbImg: 'https://thetork.com/demos/html/bitrader/assets/images/blog/author/3.png',
   },
 ];

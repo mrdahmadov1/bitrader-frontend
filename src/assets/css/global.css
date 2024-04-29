@@ -44,10 +44,6 @@ body {
   width: 8px;
 }
 
-::-webkit-scrollbar-thumb:hover {
-  background: var(--brand-color);
-}
-
 ::-webkit-scrollbar-track {
   background: var(--text-color);
 }
@@ -105,5 +101,11 @@ h6 {
 @media all and (min-width:1400px) {
   h2 {
     font-size: 3rem;
+  }
+}
+
+@media all and (min-width:768px) {
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--brand-color);
   }
 }

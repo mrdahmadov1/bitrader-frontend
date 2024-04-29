@@ -1,5 +1,11 @@
+import TeamSection from '@/components/main/team';
+
 const ContactContainer = () => {
-  return <>{/* Contact Section */}</>;
+  return (
+    <>
+      <TeamSection />
+    </>
+  );
 };
 
 export default ContactContainer;
