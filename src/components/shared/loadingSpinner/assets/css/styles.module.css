@@ -17,14 +17,13 @@
   display: grid;
   place-items: center;
 
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
   background-color: var(--body-color);
   z-index: 10000;
-  overflow:hidden;
 }
 
 .spinner img {
