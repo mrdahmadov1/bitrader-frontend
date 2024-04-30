@@ -28,8 +28,8 @@ const IntroSection = () => {
             alt="bg image"
           />
         </div>
-        <div className="container">
-          <div className={styles.container}>
+        <div className={styles.container}>
+          <div className="container">
             <CommonAnimation
               variants={variants1}
               className={`col col-12 col-md-7 col-lg-6 ${styles.content}`}

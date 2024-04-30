@@ -1,122 +1,126 @@
-import Home from "./main/home";
-import Register from "./auth/register";
-import Login from "./auth/login";
-import ResetPassword from "./auth/resetPassword";
-import About from "./main/about";
-import Services from "./main/services";
-import ServiceDetails from "./main/serviceDetails";
-import Price from "./main/price";
-import Team from "./main/team";
-import TeamDetails from "./main/teamDetails";
-import Blogs from "./main/blogs";
-import BlogDetails from "./main/blogDetails";
-import Contact from "./main/contact";
-import NotFound from "./notFound";
-import MainLayout from "../layouts/mainLayout";
-import { ComponentType } from "react";
+import MainLayout from '../layouts/mainLayout';
+import { ComponentType, Suspense, lazy } from 'react';
+import LoadingSpinner from '@/components/shared/loadingSpinner';
 
 const withLayout = (Component: ComponentType) => {
   return () => (
     <MainLayout>
-      <Component />
+      <Suspense fallback={<LoadingSpinner />}>
+        <Component />
+      </Suspense>
     </MainLayout>
   );
 };
 
+const Home = lazy(() => import('./main/home'));
+const Register = lazy(() => import('./auth/register'));
+const Login = lazy(() => import('./auth/login'));
+const ResetPassword = lazy(() => import('./auth/resetPassword'));
+const About = lazy(() => import('./main/about'));
+const Services = lazy(() => import('./main/services'));
+const ServiceDetails = lazy(() => import('./main/serviceDetails'));
+const Price = lazy(() => import('./main/price'));
+const Team = lazy(() => import('./main/team'));
+const TeamDetails = lazy(() => import('./main/teamDetails'));
+const Blogs = lazy(() => import('./main/blogs'));
+const BlogDetails = lazy(() => import('./main/blogDetails'));
+const Contact = lazy(() => import('./main/contact'));
+const NotFound = lazy(() => import('./notFound'));
+
 const pagesData = [
   {
-    path: "",
+    path: '',
     element: withLayout(Home)(),
-    title: "Home",
+    title: 'Home',
   },
   {
-    path: "register",
+    path: 'register',
     element: withLayout(Register)(),
-    title: "Sign Up",
+    title: 'Sign Up',
   },
   {
-    path: "login",
+    path: 'login',
     element: withLayout(Login)(),
-    title: "Sign In",
+    title: 'Sign In',
   },
   {
-    path: "reset-password",
+    path: 'reset-password',
     element: withLayout(ResetPassword)(),
-    title: "Reset Password",
+    title: 'Reset Password',
   },
   {
-    path: "services",
-    title: "Services",
+    path: 'services',
+    title: 'Services',
     children: [
       {
-        path: "",
+        path: '',
         element: withLayout(Services)(),
-        title: "All Services",
+        title: 'All Services',
       },
       {
-        path: ":id",
+        path: ':id',
         element: withLayout(ServiceDetails)(),
-        title: "Service",
+        title: 'Service',
       },
     ],
   },
   {
-    path: "about",
-    title: "About",
+    path: 'about',
+    title: 'About',
     children: [
       {
-        path: "",
+        path: '',
         element: withLayout(About)(),
-        title: "About Us",
+        title: 'About Us',
       },
       {
-        path: "price",
+        path: 'price',
         element: withLayout(Price)(),
-        title: "Price",
+        title: 'Price',
       },
       {
-        path: "team",
-        title: "Teams",
+        path: 'team',
+        title: 'Teams',
         children: [
           {
-            path: "",
+            path: '',
             element: withLayout(Team)(),
-            title: "All Team",
+            title: 'All Team',
           },
           {
-            path: ":id",
+            path: ':id',
             element: withLayout(TeamDetails)(),
-            title: "Member",
+            title: 'Member',
           },
         ],
       },
     ],
   },
   {
-    path: "blogs",
-    title: "Blogs",
+    path: 'blogs',
+    title: 'Blogs',
     children: [
       {
-        path: "",
+        path: '',
         element: withLayout(Blogs)(),
-        title: "All Blogs",
+        title: 'All Blogs',
       },
       {
-        path: ":id",
+        path: ':id',
         element: withLayout(BlogDetails)(),
-        title: "Blog",
+        title: 'Blog',
       },
     ],
   },
   {
-    path: "contact",
+    path: 'contact',
     element: withLayout(Contact)(),
-    title: "contact",
+    title: 'contact',
   },
   {
-    path: "*",
+    path: '*',
     element: <NotFound />,
-    title: "404",
+    title: '404',
   },
 ];
 
