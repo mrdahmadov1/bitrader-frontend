@@ -3,6 +3,7 @@ import styles from './assets/css/styles.module.css';
 import { useTranslation } from 'react-i18next';
 // import CountUp from "react-countup";
 import CommonAnimation from '@/components/common/commonAnimation';
+import thumb from './assets/images/thumb.png';
 
 const AboutSection = () => {
   const { t } = useTranslation();
@@ -37,10 +38,7 @@ const AboutSection = () => {
             </CommonAnimation>
 
             <CommonAnimation variants={variants1} className={styles.thumbImg}>
-              <img
-                src={`https://thetork.com/demos/html/bitrader/assets/images/about/1.png`}
-                alt="thumb image"
-              />
+              <img src={thumb} alt="thumb image" />
             </CommonAnimation>
 
             <CommonAnimation

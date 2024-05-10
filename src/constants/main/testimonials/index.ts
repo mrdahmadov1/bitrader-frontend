@@ -1,32 +1,36 @@
+import author1 from '@/components/main/testimonial/assets/images/author-1.png';
+import author2 from '@/components/main/testimonial/assets/images/author-2.png';
+import author3 from '@/components/main/testimonial/assets/images/author-3.png';
+
 export const slides = [
   {
     id: 1,
-    authorThumbImg: 'https://thetork.com/demos/html/bitrader/assets/images/testimonial/2.png',
+    authorThumbImg: author1,
     author: 'guy hawkins',
   },
   {
     id: 2,
-    authorThumbImg: 'https://thetork.com/demos/html/bitrader/assets/images/testimonial/6.png',
+    authorThumbImg: author2,
     author: 'belal hossain',
   },
   {
     id: 3,
-    authorThumbImg: 'https://thetork.com/demos/html/bitrader/assets/images/testimonial/1.png',
+    authorThumbImg: author3,
     author: 'mobarok hossain',
   },
   {
     id: 4,
-    authorThumbImg: 'https://thetork.com/demos/html/bitrader/assets/images/testimonial/2.png',
+    authorThumbImg: author1,
     author: 'guy hawkins',
   },
   {
     id: 5,
-    authorThumbImg: 'https://thetork.com/demos/html/bitrader/assets/images/testimonial/6.png',
+    authorThumbImg: author2,
     author: 'belal hossain',
   },
   {
     id: 6,
-    authorThumbImg: 'https://thetork.com/demos/html/bitrader/assets/images/testimonial/1.png',
+    authorThumbImg: author3,
     author: 'mobarok hossain',
   },
 ];

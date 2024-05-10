@@ -3,6 +3,8 @@ import styles from './assets/css/styles.module.css';
 import FaqItem from './faqItem';
 import CommonAnimation from '@/components/common/commonAnimation';
 import { faqList } from '@/constants/main/faq';
+import thumb from './assets/images/thumb.png';
+import shape1 from './assets/images/shape-1.png';
 
 const FAQSection = () => {
   const { t } = useTranslation();
@@ -22,10 +24,7 @@ const FAQSection = () => {
       <section className={styles.faq}>
         <div className="container">
           <div className={styles.shape1}>
-            <img
-              src={'https://thetork.com/demos/html/bitrader/assets/images/others/2.png'}
-              alt="shape image"
-            />
+            <img src={shape1} alt="shape image" />
           </div>
           <header className={styles.header}>
             <h2 className={styles.title}>
@@ -44,10 +43,7 @@ const FAQSection = () => {
             </CommonAnimation>
             <CommonAnimation variants={variants2} className="col col-lg-6">
               <div className={styles.thumb}>
-                <img
-                  src={'https://thetork.com/demos/html/bitrader/assets/images/others/1.png'}
-                  alt="thumb image"
-                />
+                <img src={thumb} alt="thumb image" />
               </div>
             </CommonAnimation>
           </div>

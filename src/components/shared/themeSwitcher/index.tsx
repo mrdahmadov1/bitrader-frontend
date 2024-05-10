@@ -4,6 +4,8 @@ import { toggleTheme } from '@/store/theme/themeSlice';
 import { RootState, AppDispatch } from '@/store/configureStore';
 import { useEffect } from 'react';
 import { updateThemeVariables } from '@/helpers/updateThemeVariables';
+import sun from '@/assets/images/sun.svg';
+import moon from '@/assets/images/moon.svg';
 
 const ThemeSwitcher = () => {
   const dispatch = useDispatch<AppDispatch>();
@@ -21,14 +23,7 @@ const ThemeSwitcher = () => {
     <>
       <div onClick={handleToggleTheme} className={styles.themeSwitcherContainer}>
         <div className={styles.theme}>
-          <img
-            src={
-              currentTheme === 'light'
-                ? 'https://thetork.com/demos/html/bitrader/assets/images/icon/sun.svg'
-                : 'https://thetork.com/demos/html/bitrader/assets/images/icon/moon.svg'
-            }
-            alt="theme icon"
-          />
+          <img src={currentTheme === 'light' ? sun : moon} alt="theme icon" />
         </div>
       </div>
     </>

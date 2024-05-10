@@ -2,6 +2,7 @@ import styles from './assets/css/styles.module.css';
 import RoadmapItem from './roadmapItem';
 import { roadmapList } from '@/constants/main/roadmap';
 import { useTranslation } from 'react-i18next';
+import shape1 from '@/components/main/pricing/assets/images/shape-1.png';
 
 const RoadmapSection = () => {
   const { t } = useTranslation();
@@ -11,10 +12,7 @@ const RoadmapSection = () => {
       <section className={styles.roadmap}>
         <div className="container">
           <div className={styles.shape1}>
-            <img
-              src={'https://thetork.com/demos/html/bitrader/assets/images/cta/5.png'}
-              alt="shape image"
-            />
+            <img src={shape1} alt="shape image" />
           </div>
           <div className={styles.shape2}>
             <span></span>

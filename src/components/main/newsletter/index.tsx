@@ -1,6 +1,10 @@
 import { useTranslation } from 'react-i18next';
 import styles from './assets/css/styles.module.css';
 import CommonAnimation from '@/components/common/commonAnimation';
+import thumb from './assets/images/thumb.png';
+import shape1 from './assets/images/shape-2.png';
+import shape2 from './assets/images/shape-3.png';
+import shape3 from './assets/images/shape-1.png';
 
 const Newsletter = () => {
   const { t } = useTranslation();
@@ -15,29 +19,17 @@ const Newsletter = () => {
       <section className={styles.newsletter}>
         <div className="container">
           <div className={styles.shape1}>
-            <img
-              src={'https://thetork.com/demos/html/bitrader/assets/images/cta/2.png'}
-              alt="shape1"
-            />
+            <img src={shape1} alt="shape1" />
           </div>
           <div className={styles.shape2}>
-            <img
-              src={'https://thetork.com/demos/html/bitrader/assets/images/cta/5.png'}
-              alt="shape2"
-            />
+            <img src={shape2} alt="shape2" />
           </div>
           <div className={styles.shape3}>
-            <img
-              src={'https://thetork.com/demos/html/bitrader/assets/images/cta/4.png'}
-              alt="shape3"
-            />
+            <img src={shape3} alt="shape3" />
           </div>
           <CommonAnimation variants={variants} className={styles.content}>
             <div className={styles.thumb}>
-              <img
-                src={'https://thetork.com/demos/html/bitrader/assets/images/cta/3.png'}
-                alt="thumb image"
-              />
+              <img src={thumb} alt="thumb image" />
             </div>
             <form className={styles.form}>
               <header className={styles.header}>

@@ -3,32 +3,40 @@ import { Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import styles from './assets/css/styles.module.css';
 import { RootState, useAppSelector } from '@/store/configureStore';
+import partner1 from './assets/images/partner-1.png';
+import partner2 from './assets/images/partner-2.png';
+import partner3 from './assets/images/partner-3.png';
+import partner4 from './assets/images/partner-4.png';
+import partner5 from './assets/images/partner-5.png';
+import partner3Dark from './assets/images/partner-3-dark.png';
+import partner4Dark from './assets/images/partner-4-dark.png';
+import partner5Dark from './assets/images/partner-5-dark.png';
 
 const slides = [
   {
     id: 1,
-    lightImage: 'https://thetork.com/demos/html/bitrader/assets/images/partner/light/1.png',
-    darkImage: 'https://thetork.com/demos/html/bitrader/assets/images/partner/light/1-dark.png',
+    lightImage: partner1,
+    darkImage: partner1,
   },
   {
     id: 2,
-    lightImage: 'https://thetork.com/demos/html/bitrader/assets/images/partner/light/2.png',
-    darkImage: 'https://thetork.com/demos/html/bitrader/assets/images/partner/light/2-dark.png',
+    lightImage: partner2,
+    darkImage: partner2,
   },
   {
     id: 3,
-    lightImage: 'https://thetork.com/demos/html/bitrader/assets/images/partner/light/3.png',
-    darkImage: 'https://thetork.com/demos/html/bitrader/assets/images/partner/light/3-dark.png',
+    lightImage: partner3,
+    darkImage: partner3Dark,
   },
   {
     id: 4,
-    lightImage: 'https://thetork.com/demos/html/bitrader/assets/images/partner/light/4.png',
-    darkImage: 'https://thetork.com/demos/html/bitrader/assets/images/partner/light/4-dark.png',
+    lightImage: partner4,
+    darkImage: partner4Dark,
   },
   {
     id: 5,
-    lightImage: 'https://thetork.com/demos/html/bitrader/assets/images/partner/light/5.png',
-    darkImage: 'https://thetork.com/demos/html/bitrader/assets/images/partner/light/5-dark.png',
+    lightImage: partner5,
+    darkImage: partner5Dark,
   },
 ];
 

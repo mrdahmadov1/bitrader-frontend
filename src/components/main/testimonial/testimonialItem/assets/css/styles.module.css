@@ -59,7 +59,9 @@
 
 .authorThumb {}
 
-.authorThumb img {}
+.authorThumb img {
+  border-radius: 50%;
+}
 
 .authorContent {}
 

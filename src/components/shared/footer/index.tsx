@@ -4,6 +4,9 @@ import styles from './assets/css/styles.module.css';
 import { useTranslation } from 'react-i18next';
 import { linkSections, socialLinks } from '@/constants/shared/footer';
 import { LinkItem } from '@/models/IFooterNav';
+import apple from './assets/images/apple.png';
+import play from './assets/images/play.png';
+import logo from '@/assets/images/logo-dark.png';
 
 const Footer: React.FC = () => {
   const { t } = useTranslation();
@@ -24,19 +27,13 @@ const Footer: React.FC = () => {
         <div className={`row p-0 gy-5 gx-4 ${styles.content}`}>
           <header className={`col-md-6 ${styles.header}`}>
             <Link to={'/'} className={styles.logo}>
-              <img
-                src={'https://thetork.com/demos/html/bitrader/assets/images/logo/logo-dark.png'}
-                alt="logo"
-              />
+              <img src={logo} alt="logo" />
             </Link>
             <p className={styles.description}>{t(`shared.footer.description`)}</p>
             <div className={styles.apps}>
               <Link to={'https://www.apple.com/app-store'} className={styles.appApple}>
                 <div className={styles.thumb}>
-                  <img
-                    src={'https://thetork.com/demos/html/bitrader/assets/images/footer/apple.png'}
-                    alt="apple icon"
-                  />
+                  <img src={apple} alt="apple icon" />
                 </div>
                 <div className={styles.appContent}>
                   <span>download on the</span>
@@ -45,10 +42,7 @@ const Footer: React.FC = () => {
               </Link>
               <Link to={'https://play.google.com'} className={styles.appPlaystore}>
                 <div className={styles.thumb}>
-                  <img
-                    src={'https://thetork.com/demos/html/bitrader/assets/images/footer/play.png'}
-                    alt="playstore icon"
-                  />
+                  <img src={play} alt="playstore icon" />
                 </div>
                 <div className={styles.appContent}>
                   <span>get it on</span>

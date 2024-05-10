@@ -3,6 +3,7 @@ import styles from './assets/css/styles.module.css';
 import { PlanItemProps } from '@/models/IPlanItemProps';
 import CommonAnimation from '@/components/common/commonAnimation';
 import { useTranslation } from 'react-i18next';
+import check from '../assets/images/check-dark.svg';
 
 const PlanItem: React.FC<PlanItemProps> = ({ item }) => {
   const { t } = useTranslation();
@@ -38,12 +39,7 @@ const PlanItem: React.FC<PlanItemProps> = ({ item }) => {
               {offerList.map((offer: string, index: number) => (
                 <li key={index} className={styles.offerItem}>
                   <span>
-                    <img
-                      src={
-                        'https://thetork.com/demos/html/bitrader/assets/images/icon/check-dark.svg'
-                      }
-                      alt="check dark image"
-                    />
+                    <img src={check} alt="check dark image" />
                   </span>
                   {offer}
                 </li>
